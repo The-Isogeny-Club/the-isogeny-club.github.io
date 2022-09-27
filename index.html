@@ -12,9 +12,9 @@
         <title>The Isogeny Club</title>
         <style>
             body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
-                   margin-right: 2em; margin-left: 2em; padding: 1em; }
-            nav { margin-right: 2em; padding: 1em; }
-            ul { margin: 0; padding-left: 1em; }
+                   margin-right: 0em; margin-left: 0em; padding: 0em; transform: scale(0.9); }
+            nav { margin-right: 0em; padding: 0em; }
+            ul { margin: 0; padding-left: 0em; }
             .spaced-list > li { margin-bottom: 1ex; }
             hr { border: 1px solid gray; margin: 2ex 0; }
             a { text-decoration: none; }
@@ -22,9 +22,19 @@
             body { background-color: 	#EAFDF8; color: #182825 }
             a { color: #36599b; }
             a:visited { color: 	#E26D5C; }
-            details {  width: 420px;  text-align: justify; }     
-            details > summary {  padding-left: 20px; padding-top: 6px;  width: 420px;  
-                                 cursor: pointer; }   
+
+            @media (min-width: 100px) {
+                details {  width: max-width;  text-align: justify; }     
+                details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;  
+                                 cursor: pointer; } 
+                }
+            
+            @media (min-width: 500px) {
+                details {  width: 420px;  text-align: justify; }     
+                details > summary {  padding-left: 20px; padding-top: 6px;  width: 420px;  
+                                 cursor: pointer; } 
+                }
+ 
         </style>
         <link rel="icon" href="favicon.ico"/>
 
@@ -116,15 +126,17 @@
 </ol>
 
 
-Also available on researchseminars.org <b><a href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b>.
+<br>
 
-<br>
-<br>
-<br>
+
 
 <h4 style="text-align: center;">
 Reach <b><a href="https://jonathke.github.io/" target="_blank">Jonathan</a></b> and <b><a href="//krijnreijnders.com" target="_blank">Krijn</a></b>
 <br>via <a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a> to join!
 </h4>
+
+<p style="text-align: center;">Researchseminars.org <b><a href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b>.</p>
+<p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub" target="_blank">here</a></b>.</p>
+<p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw" target="_blank">here</a></b>.</p>
 
 </main>
