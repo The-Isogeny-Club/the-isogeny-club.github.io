@@ -16,7 +16,7 @@
             nav { margin-right: 0em; padding: 0em; }
             ul { margin: 0; padding-left: 0em; }
             .spaced-list > li { margin-bottom: 1ex; }
-            hr { border: 1px solid gray; margin: 2ex 0; }
+            hr { border: 1px solid gray; width: 50%; margin: auto; }
             a { text-decoration: none; }
             a:hover { text-decoration: underline; }
             body { background-color: 	#EAFDF8; color: #182825 }
@@ -24,12 +24,14 @@
             a:visited { color: 	#E26D5C; }
 
             @media (min-width: 100px) {
+                ol {  width: max-width; }
                 details {  width: max-width;  text-align: justify; }     
                 details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;  
                                  cursor: pointer; } 
                 }
             
             @media (min-width: 500px) {
+                ol {  width: 420px; }
                 details {  width: 420px;  text-align: justify; }     
                 details > summary {  padding-left: 20px; padding-top: 6px;  width: 420px;  
                                  cursor: pointer; } 
@@ -53,18 +55,7 @@
 <br>
 
 <h3>Upcoming talks</h3>
-<ol class="spaced-list" start="2">
-    <li>
-        <b>git commit -m “isogenies”</b><br/>
-        <b><a href="https://www.surrey.ac.uk/people/bruno-sterner" target="_blank">Bruno Sterner</a></b>, University of Surrey<br/>
-        <i>September 27th, 17:00 (CEST)</i>. <details><summary>abstract</summary>
-            <p>Supersingular isogeny graphs possess many properties that make it an interesting
-                object to study mathematically as well as attempt to apply for cryptographic purposes.
-                In this talk, Bruno will present one of these properties and showcase how it can be applied
-                to construct a commitment scheme. This commitment scheme has strong security properties
-                and doesn’t require random oracles.</p></details>
-    </li>
-    <br>
+<ol class="spaced-list" start="3">
     <li>
         <b>[superlative]Solver - Attacking the General Isogeny Problem</b><br/>
         <b><a href="https://www.mariascrs.com/" target="_blank">Maria Corte-Real Santos</a></b>, UCL<br/>
@@ -108,9 +99,11 @@
 </ol>
 
 <br>
+<hr>
+<br>
 
 <h3>Previous talks</h3>
-<ol reversed class="spaced-list" start="1">
+<ol class="spaced-list" start="1">
     <li>
         <b>Breaking SIKE</b><br/>
         <b><a href="https://www.esat.kuleuven.be/cosic/people/thomas-decru/" target="_blank">Thomas Decru</a></b>, KU Leuven<br/>
@@ -120,21 +113,38 @@
                 to showcase how Wouter Castryck and Thomas found all the pieces of the
                 puzzle to break SIKE.</p>
             </details>
-        <p><a href="https://the-isogeny-club.github.io/1-thomas-breaking-sike/slides.pdf" target="_blank">Slides</a> - <a href="https://www.youtube.com/watch?v=mx9qNHm3mco" target="_blank">Recording</a></p>
+        <p> <a href="https://the-isogeny-club.github.io/1-thomas-breaking-sike/slides.pdf" target="_blank">Slides</a> - 
+            <a href="https://www.youtube.com/watch?v=mx9qNHm3mco" target="_blank">Recording</a> - 
+            <a href="https://askcryp.to/t/isogeny-club-talk-1-breaking-sike/18576" target="_blank">Discussion</a>
+        </p>
+    </li>
+    <br>
+    <li>
+        <b>git commit -m “isogenies”</b><br/>
+        <b><a href="https://www.surrey.ac.uk/people/bruno-sterner" target="_blank">Bruno Sterner</a></b>, University of Surrey<br/>
+        <i>September 27th, 17:00 (CEST)</i>. <details><summary>abstract</summary>
+            <p>Supersingular isogeny graphs possess many properties that make it an interesting
+                object to study mathematically as well as attempt to apply for cryptographic purposes.
+                In this talk, Bruno will present one of these properties and showcase how it can be applied
+                to construct a commitment scheme. This commitment scheme has strong security properties
+                and doesn’t require random oracles.</p></details>
+            <p><a href="https://askcryp.to/t/isogeny-club-talk-2-git-commit-m-isogenies/18559" target="_blank">Discussion</a></p>
     </li>
     <br>
 </ol>
 
-
 <br>
-
-
+<hr>
+<br>
 
 <h4 style="text-align: center;">
 Reach <b><a href="https://jonathke.github.io/" target="_blank">Jonathan</a></b> and <b><a href="//krijnreijnders.com" target="_blank">Krijn</a></b>
 <br>via <a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a> to join!
 </h4>
 
+<p style="text-align: center;">
+    Overview of discussion available at <b><a href="https://askcryp.to/tag/isogeny-club" target="_blank">askcryp.to</a></b>.
+</p>
 <p style="text-align: center;">Researchseminars.org <b><a href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b>.</p>
 <p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub" target="_blank">here</a></b>.</p>
 <p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw" target="_blank">here</a></b>.</p>
