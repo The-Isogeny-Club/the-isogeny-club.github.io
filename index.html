@@ -16,12 +16,26 @@
             nav { margin-right: 0em; padding: 0em; }
             ul { margin: 0; padding-left: 0em; }
             .spaced-list > li { margin-bottom: 1ex; }
+            p { padding-top: -1em;}
             hr { border: 1px solid gray; width: 50%; margin: auto; }
             a { text-decoration: none; }
             a:hover { text-decoration: underline; }
             body { background-color: 	#EAFDF8; color: #182825 }
             a { color: #36599b; }
             a:visited { color: 	#E26D5C; }
+            .fulljustify {
+                            text-align:justify;
+                        }
+                        .fulljustify:after {
+                            content: "";
+                            display: inline-block;
+                            width: 100%;	
+                        }
+                        #tagline {
+                            height: 80px;
+                            overflow: hidden;
+                            line-height: 80px; /* vert-center */
+                        }
 
             @media (min-width: 100px) {
                 ol {  width: max-width; }
@@ -57,8 +71,9 @@
 <h3>Upcoming talks</h3>
 <ol class="spaced-list" start="3">
     <li>
-        <b>[superlative]Solver - Attacking the General Isogeny Problem</b><br/>
-        <b><a href="https://www.mariascrs.com/" target="_blank">Maria Corte-Real Santos</a></b>, UCL<br/>
+        <b>Maria Corte-Real Santos - [superlative]Solver: Attacking the General Isogeny Problem</b><br/>
+        University College London, <a href="https://www.mariascrs.com/" target="_blank">personal page</a>
+        <br/>
         <i>October 11th, 17:00 (CEST)</i>. <details><summary>abstract</summary>
             <p> The general supersingular isogeny problem is the foundational hardness assumption underpinning
                 isogeny-based cryptography. Its conjectured classical and quantum hardness has cemented isogenies
@@ -74,25 +89,32 @@
     <br>
     <li>
         <!--<b>Title of fourth talk</b><br/>-->
-        <b><a href="http://www.lix.polytechnique.fr/Labo/Antonin.LEROUX/" target="_blank">Antonin Leroux</a></b>, DGA<br/>
+        <b>Antonin Leroux</b><br/>
+        DGA, <a href="http://www.lix.polytechnique.fr/Labo/Antonin.LEROUX/" target="_blank">personal page</a>
+        <br/>
         <i>October 25th, 17:00 (CEST)</i>. <!--<details><summary>abstract</summary><p>This talk will be very cool.</p></details>--><br/>
+        <p>
+        </p>
     </li>
     <br>
     <li>
         <!--<b>Title of fifth talk</b><br/>-->
-        <b><a href="https://borisfouotsa.github.io/" target="_blank">Tako Boris Fouotsa</a></b>, EPFL<br/>
+        <b>Tako Boris Fouotsa</b><br/>
+        EPFL, <a href="https://borisfouotsa.github.io/" target="_blank">personal page</a><br/>
         <i>November 8th, 17:00 (CET)</i>. <!--<details><summary>abstract</summary><p>This talk will be very cool.</p></details>--><br/>
     </li>
     <br>
     <li>
         <!--<b>Title of sixth talk</b><br/>-->
-        <b><a href="https://www.crypto.ruhr-uni-bochum.de/staff/kunzweiler.html.en" target="_blank">Sabrina Kunzweiler</a></b>, RUB<br/>
+        <b>Sabrina Kunzweiler</b><br/>
+        RUB, <a href="https://www.crypto.ruhr-uni-bochum.de/staff/kunzweiler.html.en" target="_blank">personal page</a><br/>
         <i>November 22nd, 17:00 (CET)</i>. <!--<details><summary>abstract</summary><p>This talk will be very cool.</p></details>--><br/>
     </li>
     <br>
     <li>
         <!--<b>Title of seventh talk</b><br/>-->
-        <b><a href="https://www.universiteitleiden.nl/en/staffmembers/marc-houben#tab-1" target="_blank">Marc Houben</a></b>, Universiteit Leiden<br/>
+        <b>Marc Houben</b><br/>
+        Universiteit Leiden, <a href="https://www.universiteitleiden.nl/en/staffmembers/marc-houben#tab-1" target="_blank">personal page</a><br/>
         <i>December 13th, 17:00 (CET)</i>.<br/>
         Note: one week later than regular schedule. <!--<details><summary>abstract</summary><p>This talk will be very cool.</p></details>--><br/>
     </li>
@@ -105,30 +127,35 @@
 <h3>Previous talks</h3>
 <ol class="spaced-list" start="1">
     <li>
-        <b>Breaking SIKE</b><br/>
-        <b><a href="https://www.esat.kuleuven.be/cosic/people/thomas-decru/" target="_blank">Thomas Decru</a></b>, KU Leuven<br/>
+        <b>Thomas Decru - Breaking SIKE</b><br/>
+        KU Leuven<br/>
         <i>September 13th, 17:00 (CEST)</i>. 
         <details><summary>abstract</summary>
             <p>Thomas paints a somewhat broader picture of the genus-2 isogeny setting
                 to showcase how Wouter Castryck and Thomas found all the pieces of the
                 puzzle to break SIKE.</p>
             </details>
-        <p> <a href="https://the-isogeny-club.github.io/1-thomas-breaking-sike/slides.pdf" target="_blank">Slides</a> - 
-            <a href="https://www.youtube.com/watch?v=mx9qNHm3mco" target="_blank">Recording</a> - 
+        <p class="fulljustify">
+            <a href="https://www.esat.kuleuven.be/cosic/people/thomas-decru/" target="_blank">Personal page</a>   •  
+            <a href="https://the-isogeny-club.github.io/1-thomas-breaking-sike/slides.pdf" target="_blank">Slides</a>  •  
+            <a href="https://www.youtube.com/watch?v=mx9qNHm3mco" target="_blank">Recording</a>  •  
             <a href="https://askcryp.to/t/isogeny-club-talk-1-breaking-sike/18576" target="_blank">Discussion</a>
         </p>
     </li>
     <br>
     <li>
-        <b>git commit -m “isogenies”</b><br/>
-        <b><a href="https://www.surrey.ac.uk/people/bruno-sterner" target="_blank">Bruno Sterner</a></b>, University of Surrey<br/>
+        <b>Bruno Sterner - git commit -m “isogenies”</b><br/>
+        University of Surrey<br/>
         <i>September 27th, 17:00 (CEST)</i>. <details><summary>abstract</summary>
             <p>Supersingular isogeny graphs possess many properties that make it an interesting
                 object to study mathematically as well as attempt to apply for cryptographic purposes.
                 In this talk, Bruno will present one of these properties and showcase how it can be applied
                 to construct a commitment scheme. This commitment scheme has strong security properties
                 and doesn’t require random oracles.</p></details>
-            <p><a href="https://askcryp.to/t/isogeny-club-talk-2-git-commit-m-isogenies/18559" target="_blank">Discussion</a></p>
+            <p>
+                <a href="https://www.surrey.ac.uk/people/bruno-sterner" target="_blank">Personal page</a> • 
+                <a href="https://askcryp.to/t/isogeny-club-talk-2-git-commit-m-isogenies/18559" target="_blank">Discussion</a>          
+            </p>
     </li>
 </ol>
 
