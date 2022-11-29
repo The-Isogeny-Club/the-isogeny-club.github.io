@@ -11,48 +11,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" /> 
         <title>The Isogeny Club</title>
         <style>
+            :root { 
+                    --home-color:#EAFDF8;   
+                    --sub-color:#C3EFFE;  
+                    --text-color: #182825; }
+
+            @media (min-width: 100px) {
+                :root { --width: max-width; --subwidth: max-width; }
+                img { width: 100%; }
+                }
+
+            @media (min-width: 500px) {
+                :root { --width: 420px; --subwidth: 400px; }
+                img { width: 420px; }
+                }
+
             body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
-                   margin-right: 0em; margin-left: 0em; padding: 0em; transform: scale(0.9); }
+                   margin-right: 0em; margin-left: 0em; padding: 0em; transform: scale(1); }
             nav { margin-right: 0em; padding: 0em; }
-            ul { margin: 0; padding-left: 0em; }
             .spaced-list > li { margin-bottom: 1ex; }
-            p { padding-top: -1em;}
             hr { border: 1px solid gray; width: 50%; margin: auto; }
             a { text-decoration: none; }
             a:hover { text-decoration: underline; }
-            body { background-color: 	#EAFDF8; color: #182825 }
-            a { color: #36599b; }
+            body { background-color: var(--home-color); color: var(--text-color) }
+            a { color: #9b4e36; }
             a:visited { color: 	#E26D5C; }
-            .fulljustify {
-                            text-align:justify;
-                        }
-                        .fulljustify:after {
-                            content: "";
-                            display: inline-block;
-                            width: 100%;	
-                        }
-                        #tagline {
-                            height: 80px;
-                            overflow: hidden;
-                            line-height: 80px; /* vert-center */
-                        }
+            .fulljustify { text-align:justify; }
+            .fulljustify:after { content: "";  display: inline-block; width: 100%;  }
+            #tagline { height: 80px;  overflow: hidden; line-height: 80px; }
 
-            @media (min-width: 100px) {
-                ol {  width: max-width; }
-                details {  width: max-width;  text-align: justify; }     
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;  
-                                 cursor: pointer; } 
-                img { width: 100%; }
-                }
-            
-            @media (min-width: 500px) {
-                ol {  width: 420px; }
-                details {  width: 420px;  text-align: justify; }     
-                details > summary {  padding-left: 20px; padding-top: 6px;  width: 420px;  
-                                 cursor: pointer; } 
-                img { width: 420px; }
-                }
- 
+            details {  text-align: justify; width: var(--subwidth); }
+            details > summary {  padding-left: 20px; padding-top: 6px; cursor: pointer; width: var(--width);}
+            p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
+            ol {  width: var(--width); }
+
+            input[type=homepage] {
+                    font-family: 'Comfortaa';
+                    background-color: var(--sub-color);
+                    border: none;
+                    color: var(--text-color);
+                    text-align: center;
+                    padding: 20px 0px;
+                    width: var(--width);
+                    cursor: pointer;
+                    }
+
+
         </style>
         <link rel="icon" href="favicon.ico"/>
 
@@ -60,9 +64,12 @@
 <body>
 <main>
 
+<input type="homepage" value="Eurocrypt 2023" href="eurocrypt.html">
+
+
 <header>
      <!-- <h1 style="text-align: center;">The Isogeny Club</h1> -->
-     <img src="https://the-isogeny-club.github.io/thanks_jessica.png" alt="Thank you, Jessica">
+     <img src="thanks_jessica.png" alt="Thank you, Jessica">
 </header>
 
 <br>
