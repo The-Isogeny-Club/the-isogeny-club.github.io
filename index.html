@@ -17,12 +17,12 @@
                     --text-color: #182825; }
 
             @media (min-width: 100px) {
-                :root { --width: max-width; --subwidth: max-width; }
+                :root { --width: max-width; --subwidth: max-width; --superwidth: max-width}
                 img { width: 100%; }
                 }
 
             @media (min-width: 500px) {
-                :root { --width: 420px; --subwidth: 400px; }
+                :root { --width: 420px; --subwidth: 400px; --superwidth: 440px;}
                 img { width: 420px; }
                 }
 
@@ -52,7 +52,7 @@
                     color: var(--text-color);
                     text-align: center;
                     padding: 20px 0px;
-                    width: var(--width);
+                    width: var(--superwidth);
                     cursor: pointer;
                     }
 
