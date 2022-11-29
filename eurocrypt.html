@@ -19,13 +19,11 @@
             @media (min-width: 100px) {
                 :root { --width: max-width; --subwidth: max-width; --superwidth: max-width; --buttonwidth: 300px;}
                 img { width: 100%; }
-                body { transform: scale(0.8); }
                 }
 
             @media (min-width: 500px) {
                 :root { --width: 420px; --subwidth: 400px; --subsubwidth: 400px; --superwidth: 440px; --buttonwidth: 440px;}
                 img { width: 420px; }
-                body { transform: scale(1); }
                 }
 
             body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
@@ -47,6 +45,7 @@
             p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
             ol {  width: var(--subsubwidth); }
             ul {  width: var(--subsubwidth); }
+            .scalewell {transform: scale(0.8); margin-top: -200px}
 
             button {
                     font-family: 'Comfortaa';
@@ -73,6 +72,8 @@
      <!-- <h1 style="text-align: center;">The Isogeny Club</h1> -->
      <img src="thanks_jessica.png" alt="Thank you, Jessica">
 </header>
+
+<div class="scalewell">
 
 <br>
 <h2 style="text-align: center;">Brainstorm Sessions</h2>
@@ -155,4 +156,5 @@ send a PDF to </p>
 <p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub" target="_blank">here</a></b></p>
 <p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw" target="_blank">here</a></b></p>
 
+</div>
 </main>
