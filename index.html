@@ -21,7 +21,10 @@
                     --width: max-width; 
                     --subwidth: max-width; 
                     --superwidth: max-width; 
-                    --buttonwidth: 300px;}
+                    --buttonwidth: 300px;
+                    --scale: 0.8;
+                    --correction: -220px;
+                }
                 img { width: 100%; }
                 }
 
@@ -31,10 +34,14 @@
                     --subwidth: 400px; 
                     --subsubwidth: 380px; 
                     --superwidth: 440px; 
-                    --buttonwidth: 440px;}
+                    --buttonwidth: 440px;
+                    --scale: 0.9;
+                    --correction: -110px;
+                }
                 img { width: 420px; }
                 }
 
+            header { margin-top: -20px}
             body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
                    margin-right: 0em; margin-left: 0em; padding: 0em; }
             nav { margin-right: 0em; padding: 0em; }
@@ -54,7 +61,7 @@
             p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
             ol {  width: var(--subsubwidth); margin-left: -20px;}
             ul {  width: var(--subsubwidth); }
-            .scalewell {transform: scale(0.8); margin-top: -200px}
+            .scalewell {transform: scale(var(--scale)); margin-top: var(--correction)}
             
             button {
                     font-family: 'Comfortaa';
@@ -87,7 +94,6 @@
 <br>
 <h2 style="text-align: center;">Seminar Sessions</h2>
 <p style="text-align: center;">A seminar session for young isogenists.</p>
-<br>
 <br>
 
 <h3>Upcoming talks</h3>
