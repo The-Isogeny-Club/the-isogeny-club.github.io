@@ -16,18 +16,20 @@
                     --sub-color:#C3EFFE;  
                     --text-color: #182825; }
 
-            @media (min-width: 100px) {
+                    @media (min-width: 100px) {
                 :root { --width: max-width; --subwidth: max-width; --superwidth: max-width}
                 img { width: 100%; }
+                body { transform: scale(0.9); }
                 }
 
             @media (min-width: 500px) {
                 :root { --width: 420px; --subwidth: 400px; --superwidth: 440px;}
                 img { width: 420px; }
+                body { transform: scale(1); }
                 }
 
             body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
-                   margin-right: 0em; margin-left: 0em; padding: 0em; transform: scale(1); }
+                   margin-right: 0em; margin-left: 0em; padding: 0em; }
             nav { margin-right: 0em; padding: 0em; }
             .spaced-list > li { margin-bottom: 1ex; }
             hr { border: 1px solid gray; width: 50%; margin: auto; }
