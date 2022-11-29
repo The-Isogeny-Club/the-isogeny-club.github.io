@@ -16,12 +16,11 @@
             body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
                    margin-right: 0em; margin-left: 0em; padding: 0em; transform: scale(0.9); }
             nav { margin-right: 0em; padding: 0em; }
-            ul { margin: 0; padding-left: 0em; }
             .spaced-list > li { margin-bottom: 1ex; }
             hr { border: 1px solid gray; width: 50%; margin: auto; }
             a { text-decoration: none; }
             a:hover { text-decoration: underline; }
-            body { background-color: 	#C3EFFE; color: #182825 } #TODO
+            body { background-color: 	#C3EFFE; color: #182825 }
             a { color: #9b4e36; }
             a:visited { color: 	#E26D5C; }
             .fulljustify {
@@ -48,7 +47,7 @@
                         }
 
             @media (min-width: 100px) {
-                ol {  width: max-width; }
+                ul {  width: max-width -20px; }
                 details {  width: max-width;  text-align: justify; }
                 details > summary {  padding-left: 20px; padding-top: 6px;  width: max-width;
                                  cursor: pointer; }
@@ -65,7 +64,7 @@
                 }
 
             @media (min-width: 500px) {
-                ol {  width: 420px; }
+                ul {  width: 400px; ; }
                 details {  width: 420px;  text-align: justify; }
                 details > summary {  padding-left: 20px; padding-top: 6px;  width: 420px;
                                  cursor: pointer; }
@@ -90,7 +89,7 @@
 <body>
 <main>
 
-<input type="homepage" value="Home page">
+<!-- <input type="homepage" value="Home page"> -->
 
 <header>
      <!-- <h1 style="text-align: center;">The Isogeny Club</h1> -->
@@ -107,15 +106,25 @@
 <br>
 
 <h3>Summary</h3>
-<p> We are excited to welcome you to the in-person event "The Isogeny Club - Brainstorm Sessions"!
-    The event will take place on Saturday, 22. April in Lyon, France, and will consist of two parts:
-    In the morning, there will be a series of "idea pitches" (that have been prepared
-    beforehand by any participant, see "Submission" for details on how to submit an idea) consisting
+<p> We are excited to welcome you to: </p>
+    <p style="text-align: center;"><b>The Isogeny Club - Brainstorm Sessions!</b></p>
+    
+<p>This event will take place on Saturday, 22. April in Lyon, 
+    as an affiliated event to Eurocrypt 2023. 
+    This event will consist of two parts:</p>
+    
+<ul class="fulljustify">
+    <li>In the morning, there will be a series of "idea pitches" consisting
     of a presentation of about 15-20 minutes leading to a potential research question.
-    In the afternoon, we will focus in groups of 4 to 6 participants,
-     working on (a selection of) these potential research questions.
+    These pitches are submitted and presented by participants,  see "Submission" for details on how 
+    to submit an idea.</li> 
+<br>
+    <li>In the afternoon, we will focus in groups of 4 to 6 participants,
+     working on (a selection of) these potential research questions.</li>
+</ul>
 
-    If there are too many proposed ideas in the morning for the number of working groups,
+<p>
+If there are too many proposed ideas in the morning for the number of working groups,
     we will hold a vote to select the ideas to work on.
 </p>
 
@@ -124,12 +133,21 @@
 <br>
 
 <h3>Submission</h3>
-<p>
-If you have an idea for a research question you would like to present, please
-send a PDF to isogenyclub@gmail.com containing the following information:
-- Your name and affiliation
-- A short abstract summarizing the idea
-- A few key words for the idea.
+<p>We welcome everyone to submit an idea! There are no bad ideas, and we value all ideas, regardless
+    of academic merit.
+</p>
+
+<p>If you have an idea for a research question you would like to present, please
+send a PDF to </p>
+
+<p style="text-align: center;"><b><a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a></b></p>
+
+<p>containing the following information:
+<ul>
+    <li> Your name, affiliation, and a way to reach you, such as e-mail address or phone number. </li> <br>
+    <li> An abstract of anywhere between half a page and two pages, summarizing the idea. </li> <br>
+    <li> A few key words for the idea, such as <i>genus 2, curve arithmetic, breaking CSIDH</i></li>
+</ul>
 </p>
 
 <br>
@@ -137,21 +155,29 @@ send a PDF to isogenyclub@gmail.com containing the following information:
 <br>
 
 <h3>Schedule</h3>
-<p>
-
+<p>The full schedule will be announced later.</p>
+<!--
+<ul>
+    <li> 09.00 - 10.30: First pitch session </li> <br>
+    <li> 11.00 - 12.30: Second pitch session </li> <br>
+    <li> 13.30 - 15.30: First brain storm session </li> <br>
+    <li> 16.00 - 18.00: Second brain storm session </li> <br>
+</ul>
+-->
 
 <br>
-#### EDIT BELOW
-<h4 style="text-align: center;">
-Reach <b><a href="https://jonathke.github.io/" target="_blank">Jonathan</a></b> and <b><a href="//krijnreijnders.com" target="_blank">Krijn</a></b>
-<br>via <a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a> to join!
-</h4>
+<hr>
+<br>
 
 <p style="text-align: center;">
-    Overview of discussion available at <b><a href="https://askcryp.to/tag/isogeny-club" target="_blank">askcryp.to</a></b>.
+    <b>Submit your ideas to <a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a></b>
 </p>
-<p style="text-align: center;">Researchseminars.org <b><a href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b>.</p>
-<p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub" target="_blank">here</a></b>.</p>
-<p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw" target="_blank">here</a></b>.</p>
+
+<p style="text-align: center;">
+    Overview of Seminar Sessions at <b><a href="https://askcryp.to/tag/isogeny-club" target="_blank">askcryp.to</a></b>.
+</p>
+<p style="text-align: center;">Researchseminars.org <b><a href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b></p>
+<p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub" target="_blank">here</a></b></p>
+<p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw" target="_blank">here</a></b></p>
 
 </main>
