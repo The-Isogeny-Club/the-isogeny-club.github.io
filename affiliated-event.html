@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>The Isogeny Club</title>
         <style>
+            :root { --home-color:#EAFDF8;   --sub-color:#C3EFFE;   }
+
             body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
                    margin-right: 0em; margin-left: 0em; padding: 0em; transform: scale(0.9); }
             nav { margin-right: 0em; padding: 0em; }
@@ -19,7 +21,7 @@
             hr { border: 1px solid gray; width: 50%; margin: auto; }
             a { text-decoration: none; }
             a:hover { text-decoration: underline; }
-            body { background-color: 	#C3EFFE; color: #182825 }
+            body { background-color: 	#C3EFFE; color: #182825 } #TODO
             a { color: #9b4e36; }
             a:visited { color: 	#E26D5C; }
             .fulljustify {
@@ -36,6 +38,15 @@
                             line-height: 80px; /* vert-center */
                         }
 
+                       
+            .homepagecolor {
+                        background-color: #EAFDF8;
+                        }
+
+            .affilcolor {
+                        background-color: #C3EFFE;
+                        }
+
             @media (min-width: 100px) {
                 ol {  width: max-width; }
                 details {  width: max-width;  text-align: justify; }
@@ -43,6 +54,14 @@
                                  cursor: pointer; }
                 img { width: 100%; }
                 p { padding-top: -1em; width: max-width; padding-left: 20px; text-align: justify;}
+                .box {
+                            float: center;
+                            height: 20px;
+                            width: max-width;
+                            margin-bottom: 15px;
+                            border: 0px solid black;
+                            clear: both;
+                        }
                 }
 
             @media (min-width: 500px) {
@@ -52,6 +71,16 @@
                                  cursor: pointer; }
                 img { width: 420px; }
                 p { padding-top: -1em; width: 420px; padding-left: 20px;   text-align: justify;}
+
+                input[type=homepage],  {
+                    background-color: homepage;
+                    border: none;
+                    color: white;
+                    padding: 16px 32px;
+                    text-decoration: none;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    }
                 }
 
         </style>
@@ -60,6 +89,8 @@
 
 <body>
 <main>
+
+<input type="homepage" value="Home page">
 
 <header>
      <!-- <h1 style="text-align: center;">The Isogeny Club</h1> -->
