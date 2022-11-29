@@ -23,7 +23,7 @@
                 }
 
             @media (min-width: 500px) {
-                :root { --width: 420px; --subwidth: 400px; --superwidth: 440px;}
+                :root { --width: 420px; --subwidth: 400px; --subsubwidth: 380px; --superwidth: 440px;}
                 img { width: 420px; }
                 body { transform: scale(1); }
                 }
@@ -38,15 +38,15 @@
             body { background-color: var(--home-color); color: var(--text-color) }
             a { color: #9b4e36; }
             a:visited { color: 	#E26D5C; }
-            .fulljustify { text-align:justify; }
+            .fulljustify { text-align:justify; margin-left: -20px; }
             .fulljustify:after { content: "";  display: inline-block; width: 100%;  }
             #tagline { height: 80px;  overflow: hidden; line-height: 80px; }
 
-            details {  text-align: justify; width: var(--subwidth); }
-            details > summary {  padding-left: 0px; padding-top: 6px; cursor: pointer; width: var(--subwidth);}
-            p { padding-top: -1em; padding-left: 20px; text-align: justify; width:var(--width)}
-            ol {  width: var(--subwidth); }
-            ul {  width: var(--subwidth); }
+            details {  text-align: justify; width: var(--subsubwidth); }
+            details > summary {  padding-left: 0px; padding-top: 6px; cursor: pointer; width: var(--subsubwidth);}
+            p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
+            ol {  width: var(--subsubwidth); margin-left: -20px;}
+            ul {  width: var(--subsubwidth); }
             
             button {
                     font-family: 'Comfortaa';
@@ -55,6 +55,7 @@
                     color: var(--text-color);
                     text-align: center;
                     padding: 20px 0px;
+                    margin-left: -20px;
                     width: var(--superwidth);
                     cursor: pointer;
                     }
@@ -80,7 +81,7 @@
 <br>
 
 <h3>Upcoming talks</h3>
-<ol class="spaced-list" start="7">
+<ol class="full-justify" start="7">
     <li>
         <!--<b>Title of seventh talk</b><br/>-->
         <b>Marc Houben</b><br/>
@@ -95,7 +96,7 @@
 <br>
 
 <h3>Previous talks</h3>
-<ol class="spaced-list" start="1">
+<ol class="full-justify" start="1">
     <li>
         <b>Thomas Decru - Breaking SIKE</b><br/>
         KU Leuven<br/>

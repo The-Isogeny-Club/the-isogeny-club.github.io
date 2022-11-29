@@ -23,7 +23,7 @@
                 }
 
             @media (min-width: 500px) {
-                :root { --width: 420px; --subwidth: 400px; --superwidth: 440px;}
+                :root { --width: 420px; --subwidth: 400px; --subsubwidth: 400px; --superwidth: 440px;}
                 img { width: 420px; }
                 body { transform: scale(1); }
                 }
@@ -38,15 +38,15 @@
             body { background-color: var(--sub-color); color: var(--text-color) }
             a { color: #9b4e36; }
             a:visited { color: 	#E26D5C; }
-            .fulljustify { text-align:justify; }
+            .fulljustify { text-align:justify; margin-left: -20px;}
             .fulljustify:after { content: "";  display: inline-block; width: 100%;  }
             #tagline { height: 80px;  overflow: hidden; line-height: 80px; }
 
             details {  text-align: justify; width: var(--width); }
             details > summary {  padding-left: 20px; padding-top: 6px; cursor: pointer; width: var(--width);}
-            p { padding-top: -1em; padding-left: 20px; text-align: justify; width:var(--width)}
-            ol {  width: var(--subwidth); }
-            ul {  width: var(--subwidth); }
+            p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
+            ol {  width: var(--subsubwidth); }
+            ul {  width: var(--subsubwidth); }
 
             button {
                     font-family: 'Comfortaa';
@@ -55,6 +55,7 @@
                     color: var(--text-color);
                     text-align: center;
                     padding: 20px 0px;
+                    margin-left: -20px;
                     width: var(--superwidth);
                     cursor: pointer;
                     }
@@ -117,7 +118,7 @@ send a PDF to </p>
 <p style="text-align: center;"><b><a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a></b></p>
 
 <p>containing the following information:
-<ul>
+<ul class="fulljustify">
     <li> Your name, affiliation, and a way to reach you, such as e-mail address or phone number. </li> <br>
     <li> An abstract of anywhere between half a page and two pages, summarizing the idea. </li> <br>
     <li> A few key words for the idea, such as <i>genus 2, curve arithmetic, breaking CSIDH</i></li>
