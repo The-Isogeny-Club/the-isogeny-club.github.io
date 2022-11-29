@@ -29,7 +29,7 @@
             body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
                    margin-right: 0em; margin-left: 0em; padding: 0em; transform: scale(1); }
             nav { margin-right: 0em; padding: 0em; }
-            .spaced-list > li { margin-bottom: 1ex; }
+            .spaced-list > li { margin-bottom: 1ex; width: var(--subwidth); }
             hr { border: 1px solid gray; width: 50%; margin: auto; }
             a { text-decoration: none; }
             a:hover { text-decoration: underline; }
@@ -41,9 +41,9 @@
             #tagline { height: 80px;  overflow: hidden; line-height: 80px; }
 
             details {  text-align: justify; width: var(--subwidth); }
-            details > summary {  padding-left: 20px; padding-top: 6px; cursor: pointer; width: var(--width);}
+            details > summary {  padding-left: 0px; padding-top: 6px; cursor: pointer; width: var(--subwidth);}
             p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
-            ol {  width: var(--width); }
+            ol {  width: var(--subwidth); }
 
             button {
                     font-family: 'Comfortaa';
@@ -63,8 +63,8 @@
 
 <body>
 <main>
-
-<button href="eurocrypt.html" target="_blank";>Eurocrypt 2023</button>
+    
+<a href="eurocrypt.html"><button>Eurocrypt 2023</button></a>
 
 
 <header>
