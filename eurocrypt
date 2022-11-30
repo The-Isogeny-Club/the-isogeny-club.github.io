@@ -1,0 +1,175 @@
+<!--
+    if you are reading this, you might be too much of a nerd or
+    perhaps precisely the amount of nerd the isogeny club needs
+                                                                -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>The Isogeny Club</title>
+        <style>
+            :root { 
+                    --home-color:#EAFDF8;   
+                    --sub-color:#C3EFFE;  
+                    --text-color: #182825; }
+
+            @media (min-width: 100px) {
+                :root { 
+                    --width: max-width; 
+                    --subwidth: max-width; 
+                    --superwidth: max-width; 
+                    --buttonwidth: 300px;
+                    --scale: 0.8;
+                    --correction: -200px;
+                }
+                img { width: 100%; }
+                }
+
+            @media (min-width: 500px) {
+                :root { 
+                    --width: 420px; 
+                    --subwidth: 400px; 
+                    --subsubwidth: 400px; 
+                    --superwidth: 440px; 
+                    --buttonwidth: 440px;
+                    --scale: 0.9;
+                    --correction: -100px;
+                }
+                img { width: 420px; }
+                }
+
+            header { margin-top: -20px}
+            body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
+                   margin-right: 0em; margin-left: 0em; padding: 0em; }
+            nav { margin-right: 0em; padding: 0em; }
+            .spaced-list > li { margin-bottom: 1ex; }
+            hr { border: 1px solid gray; width: 50%; margin: auto; }
+            a { text-decoration: none; }
+            a:hover { text-decoration: underline; }
+            body { background-color: var(--sub-color); color: var(--text-color) }
+            a { color: #9b4e36; }
+            a:visited { color: 	#E26D5C; }
+            .fulljustify { text-align:justify; margin-left: -20px;}
+            .fulljustify:after { content: "";  display: inline-block; width: 100%;  }
+            #tagline { height: 80px;  overflow: hidden; line-height: 80px; }
+
+            details {  text-align: justify; width: var(--width); }
+            details > summary {  padding-left: 20px; padding-top: 6px; cursor: pointer; width: var(--width);}
+            p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
+            ol {  width: var(--subsubwidth); }
+            ul {  width: var(--subsubwidth); }
+            .scalewell {transform: scale(var(--scale)); margin-top: var(--correction)}
+
+            button {
+                    font-family: 'Comfortaa';
+                    background-color: var(--home-color);
+                    border: none;
+                    color: var(--text-color);
+                    text-align: center;
+                    padding: 20px 0px;
+                    margin-left: 0px;
+                    width: var(--buttonwidth);
+                    cursor: pointer;
+                    }
+
+        </style>
+        <link rel="icon" href="favicon.ico"/>
+
+
+<body>
+<main>
+
+<p style="text-align: center;"><a href="/"><button>Seminar Sessions</button></a></p>
+
+<header>
+     <!-- <h1 style="text-align: center;">The Isogeny Club</h1> -->
+     <img src="thanks_jessica.png" alt="Thank you, Jessica">
+</header>
+
+<div class="scalewell">
+
+<br>
+<h2 style="text-align: center;">Brainstorm Sessions</h2>
+<p style="text-align: center;">A brainstorm session for all isogenists.</p>
+<br>
+
+<h3>Summary</h3>
+<p> We are excited to welcome you to: </p>
+    <p style="text-align: center;"><b>The Isogeny Club - Brainstorm Sessions!</b></p>
+    
+<p>This event will take place on Saturday, 22. April in Lyon, 
+    as an affiliated event to Eurocrypt 2023. 
+    This event will consist of two parts:</p>
+    
+<ul class="fulljustify">
+    <li>In the morning, there will be a series of "idea pitches" consisting
+    of a presentation of about 10-15 minutes leading to a potential research question.
+    These pitches are submitted and presented by participants,  see "Submission" for details on how 
+    to submit an idea.</li> 
+<br>
+    <li>In the afternoon, we will focus in groups of 4 to 6 participants,
+     working on (a selection of) these potential research questions.</li>
+</ul>
+
+<p>
+If there are too many proposed ideas in the morning for the number of working groups,
+    we will hold a vote to select the ideas to work on.
+</p>
+
+<br>
+<hr>
+<br>
+
+<h3>Submission</h3>
+<p>We welcome everyone to submit an idea! There are no bad ideas, and we value all ideas, regardless
+    of academic merit.
+</p>
+
+<p>If you have an idea for a research question you would like to present, please
+send a PDF to </p>
+
+<p style="text-align: center;"><b><a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a></b></p>
+
+<p>containing the following information:
+<ul class="fulljustify">
+    <li> Your name, affiliation, and a way to reach you, such as e-mail address or phone number. </li> <br>
+    <li> An abstract of anywhere between half a page and two pages, summarizing the idea. </li> <br>
+    <li> A few key words for the idea, such as <i>genus 2, curve arithmetic, breaking CSIDH</i></li>
+</ul>
+</p>
+
+<br>
+<hr>
+<br>
+
+<h3>Schedule</h3>
+<p>The full schedule will be announced later.</p>
+<!--
+<ul>
+    <li> 09.00 - 10.30: First pitch session </li> <br>
+    <li> 11.00 - 12.30: Second pitch session </li> <br>
+    <li> 13.30 - 15.30: First brain storm session </li> <br>
+    <li> 16.00 - 18.00: Second brain storm session </li> <br>
+</ul>
+-->
+
+<br>
+<hr>
+<br>
+
+<p style="text-align: center;">
+    <b>Submit your ideas to <a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a></b>
+</p>
+
+<p style="text-align: center;">
+    Overview of Seminar Sessions at <b><a href="https://askcryp.to/tag/isogeny-club" target="_blank">askcryp.to</a></b>.
+</p>
+<p style="text-align: center;">Researchseminars.org <b><a href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b></p>
+<p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub" target="_blank">here</a></b></p>
+<p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw" target="_blank">here</a></b></p>
+
+</div>
+</main>
