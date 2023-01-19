@@ -54,6 +54,8 @@
             a:visited { color: 	#E26D5C; }
             .fulljustify { text-align:justify; margin-left: -20px; }
             .fulljustify:after { content: "";  display: inline-block; width: 100%;  }
+            .incompleteinfo { text-align:left; margin-left: -20px; }
+            .incompleteinfo:after { content: "";  display: inline-block; width: 100%;  }
             #tagline { height: 80px;  overflow: hidden; line-height: 80px; }
 
             details {  text-align: justify; width: var(--subsubwidth); }
@@ -97,7 +99,7 @@
 <br>
 
 <h3>Upcoming talks</h3>
-<ol class="full-justify" start="1">
+<ol class="fulljustify" start="1">
     <li>
         <b>Sarah Arpin - Orientations and Isogeny Graphs</b><br/>
         Leiden University<br/>
@@ -116,7 +118,7 @@
                 orientations to supersingular elliptic curves.
                 </p>
         </details>
-        <p>
+        <p class="incompleteinfo" >
             <a href="https://www.universiteitleiden.nl/en/staffmembers/sarah-arpin" target="_blank">Personal page</a> 
             <!-- <a href="https://example.com" target="_blank">Slides</a>  •  
             <a href="https://example.com" target="_blank">Recording</a>  •  
