@@ -5,324 +5,494 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-        <title>The Isogeny Club</title>
-        <style>
-            :root { 
-                    --home-color:#EAFDF8;   
-                    --sub-color:#C3EFFE;  
-                    --text-color: #182825; }
 
-            @media (min-width: 100px) {
-                :root { 
-                    --width: max-width; 
-                    --subwidth: max-width; 
-                    --superwidth: max-width; 
-                    --buttonwidth: 300px;
-                    --scale: 0.8;
-                    --correction: -220px;
-                }
-                img { width: 100%; }
-                }
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Isogeny Club</title>
+    <style>
+        :root {
+            --home-color: #EAFDF8;
+            --sub-color: #C3EFFE;
+            --text-color: #182825;
+        }
 
-            @media (min-width: 500px) {
-                :root { 
-                    --width: 420px; 
-                    --subwidth: 400px; 
-                    --subsubwidth: 380px; 
-                    --superwidth: 440px; 
-                    --buttonwidth: 440px;
-                    --scale: 0.9;
-                    --correction: -110px;
-                }
-                img { width: 420px; }
-                }
+        @media (min-width: 100px) {
+            :root {
+                --width: max-width;
+                --subwidth: max-width;
+                --superwidth: max-width;
+                --buttonwidth: 300px;
+                --scale: 0.8;
+                --correction: -220px;
+            }
 
-            header { margin-top: -20px}
-            body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
-                   margin-right: 0em; margin-left: 0em; padding: 0em; }
-            nav { margin-right: 0em; padding: 0em; }
-            .spaced-list > li { margin-bottom: 1ex; width: var(--subwidth); }
-            hr { border: 1px solid gray; width: 50%; margin: auto; }
-            a { text-decoration: none; }
-            a:hover { text-decoration: underline; }
-            body { background-color: var(--home-color); color: var(--text-color) }
-            a { color: #9b4e36; }
-            a:visited { color: 	#E26D5C; }
-            .fulljustify { text-align:justify; margin-left: -20px; }
-            .fulljustify:after { content: "";  display: inline-block; width: 100%;  }
-            .halfjustify { text-align:justify; margin-left: -20px; width: 85%; }
-            .halfjustify:after { content: "";  display: inline-block; width: 100%;  }
-            .incompleteinfo { text-align:left; margin-left: -20px; }
-            .incompleteinfo:after { content: "";  display: inline-block; width: 100%;  }
-            #tagline { height: 80px;  overflow: hidden; line-height: 80px; }
+            img {
+                width: 100%;
+            }
+        }
 
-            details {  text-align: justify; width: var(--subsubwidth); }
-            details > summary {  padding-left: 0px; padding-top: 6px; cursor: pointer; width: var(--subsubwidth);}
-            p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
-            ol {  width: var(--subsubwidth); margin-left: -20px;}
-            ul {  width: var(--subsubwidth); }
-            .scalewell {transform: scale(var(--scale)); margin-top: var(--correction)}
-            
-            button {
-                    font-family: 'Comfortaa';
-                    background-color: var(--sub-color);
-                    border: none;
-                    color: var(--text-color);
-                    text-align: center;
-                    padding: 20px 0px;
-                    margin-left: 0px;
-                    width: var(--buttonwidth);
-                    cursor: pointer;
-                    }
+        @media (min-width: 500px) {
+            :root {
+                --width: 420px;
+                --subwidth: 400px;
+                --subsubwidth: 380px;
+                --superwidth: 440px;
+                --buttonwidth: 440px;
+                --scale: 0.9;
+                --correction: -110px;
+            }
 
-        </style>
-        <link rel="icon" href="favicon.ico"/>
+            img {
+                width: 420px;
+            }
+        }
+
+        header {
+            margin-top: -20px
+        }
+
+        body {
+            font-family: 'Comfortaa';
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            margin-right: 0em;
+            margin-left: 0em;
+            padding: 0em;
+        }
+
+        nav {
+            margin-right: 0em;
+            padding: 0em;
+        }
+
+        .spaced-list>li {
+            margin-bottom: 1ex;
+            width: var(--subwidth);
+        }
+
+        hr {
+            border: 1px solid gray;
+            width: 50%;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            background-color: var(--home-color);
+            color: var(--text-color)
+        }
+
+        a {
+            color: #9b4e36;
+        }
+
+        a:visited {
+            color: #E26D5C;
+        }
+
+        .fulljustify {
+            text-align: justify;
+            margin-left: -20px;
+        }
+
+        .fulljustify:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        .halfjustify {
+            text-align: justify;
+            margin-left: -20px;
+            width: 85%;
+        }
+
+        .halfjustify:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        .incompleteinfo {
+            text-align: left;
+            margin-left: -20px;
+        }
+
+        .incompleteinfo:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        #tagline {
+            height: 80px;
+            overflow: hidden;
+            line-height: 80px;
+        }
+
+        details {
+            text-align: justify;
+            width: var(--subsubwidth);
+        }
+
+        details>summary {
+            padding-left: 0px;
+            padding-top: 6px;
+            cursor: pointer;
+            width: var(--subsubwidth);
+        }
+
+        p {
+            padding-top: -1em;
+            padding-left: 0px;
+            text-align: justify;
+            width: var(--width)
+        }
+
+        ol {
+            width: var(--subsubwidth);
+            margin-left: -20px;
+        }
+
+        ul {
+            width: var(--subsubwidth);
+        }
+
+        .scalewell {
+            transform: scale(var(--scale));
+            margin-top: var(--correction)
+        }
+
+        button {
+            font-family: 'Comfortaa';
+            background-color: var(--sub-color);
+            border: none;
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px 0px;
+            margin-left: 0px;
+            width: var(--buttonwidth);
+            cursor: pointer;
+        }
+    </style>
+    <link rel="icon" href="favicon.ico" />
 
 
 <body>
-<main>
+    <main>
 
-<p style="text-align: center;"><a href="eurocrypt"><button>Brainstorm Sessions</button></a></p>
+        <p style="text-align: center;"><a href="eurocrypt"><button>Brainstorm Sessions</button></a></p>
 
-<header>
-     <!-- <h1 style="text-align: center;">The Isogeny Club</h1> -->
-     <img src="thanks_jessica.png" alt="Thank you, Jessica">
-</header>
+        <header>
+            <!-- <h1 style="text-align: center;">The Isogeny Club</h1> -->
+            <img src="thanks_jessica.png" alt="Thank you, Jessica">
+        </header>
 
-<div class="scalewell">
+        <div class="scalewell">
 
-<br>
-<h2 style="text-align: center;">Seminar Sessions</h2>
-<p style="text-align: center;">A seminar session for young isogenists.</p>
-<br>
+            <br>
+            <h2 style="text-align: center;">Seminar Sessions</h2>
+            <p style="text-align: center;">A seminar session for young isogenists.</p>
+            <br>
 
-<h3>Upcoming talks</h3>
-<ol class="fulljustify" start="1">
-    <li>
-        <b>Sarah Arpin - Orientations and Isogeny Graphs</b><br/>
-        Leiden University<br/>
-        <i>January 31st, 17:00 (CET)</i>. 
-        <details><summary>abstract</summary>
-            <p>To study supersingular isogeny graphs, one may add to the elliptic curves the information of an orientation,
-                or a particular embedding of an imaginary quadratic field into the endomorphism ring of the curve.
-                Recent cryptographic protocols (Séta, OSIDH) have made use of orientations to define new hard problems on
-                supersingular isogeny graphs. The mathematics of orientations have been studied for a long time, but the
-                algorithmic implications are just now being understood.</p>
-            <p>As part of a recent Women in Numbers 5 (WIN5) collaboration, my collaborators and I use orientations towards
-                two different goals: 1. path-finding algorithms in the supersingular ℓ-isogeny graph and 2. understanding
-                and counting cycles in the supersingular ℓ-isogeny graph. 
-                In this talk, we will first introduce the theory of orientations and discuss the relevant hard problems.
-                We will go on to describe the path-finding algorithms and the theory behind cycle-counting which stem from adding
-                orientations to supersingular elliptic curves.
+            <h3>Season 2 talks</h3>
+            <ol class="fulljustify" start="2">
+                <li>
+                    <b>Andrea Basso</b>, February 14th, 17:00 (CET).
+                </li>
+                <br>
+                <li>
+                    <b>Talk 3</b>, February 28th, 17:00 (CET).
+                </li>
+                <br>
+                <li>
+                    <b>Talk 4</b>, March 14th, 17:00 (CET).
+                </li>
+                <br>
+                <li>
+                    <b>Talk 5</b>, March 28th, 17:00 (CEST).
+                </li>
+                <br>
+                <li>
+                    <b>Talk 6</b>, April 11th, 17:00 (CEST).
+                </li>
+            </ol>
+
+            <br>
+            <hr>
+            <br>
+
+
+            <h3>Previous talks</h3>
+            <ol class="full-justify" start="1">
+                <li>
+                    <b>Thomas Decru - Breaking SIKE</b><br />
+                    KU Leuven<br />
+                    <i>September 13th, 17:00 (CEST)</i>.
+                    <details>
+                        <summary>abstract</summary>
+                        <p>Thomas paints a somewhat broader picture of the genus-2 isogeny setting
+                            to showcase how Wouter Castryck and Thomas found all the pieces of the
+                            puzzle to break SIKE.</p>
+                    </details>
+                    <p class="fulljustify">
+                        <a href="https://www.esat.kuleuven.be/cosic/people/thomas-decru/" target="_blank">Personal
+                            page</a> •
+                        <a href="https://the-isogeny-club.github.io/1-thomas-breaking-sike/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=mx9qNHm3mco" target="_blank">Recording</a> •
+                        <a href="https://askcryp.to/t/18576" target="_blank">Discussion</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Bruno Sterner - git commit -m “isogenies”</b><br />
+                    University of Surrey<br />
+                    <i>September 27th, 17:00 (CEST)</i>. <details>
+                        <summary>abstract</summary>
+                        <p>Supersingular isogeny graphs possess many properties that make it an interesting
+                            object to study mathematically as well as attempt to apply for cryptographic purposes.
+                            In this talk, Bruno will present one of these properties and showcase how it can be applied
+                            to construct a commitment scheme. This commitment scheme has strong security properties
+                            and doesn’t require random oracles.</p>
+                    </details>
+                    <p class="fulljustify">
+                        <a href="https://www.surrey.ac.uk/people/bruno-sterner" target="_blank">Personal page</a> •
+                        <a href="https://the-isogeny-club.github.io/2-bruno-git-commit/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=5a-l3OJ88VQ" target="_blank">Recording</a> •
+                        <a href="https://askcryp.to/t/18559" target="_blank">Discussion</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Maria Corte-Real Santos - [superlative]Solver: Attacking the General Isogeny Problem</b><br />
+                    University College London
+                    <br />
+                    <i>October 11th, 17:00 (CEST)</i>. <details>
+                        <summary>abstract</summary>
+                        <p> The general supersingular isogeny problem is the foundational hardness assumption
+                            underpinning
+                            isogeny-based cryptography. Its conjectured classical and quantum hardness has cemented
+                            isogenies
+                            as a promising tool for building post-quantum secure protocols. </p>
+
+                        <p>In this talk, we will look at the general isogeny problem in low dimensions. More
+                            specifically,
+                            we consider the hardness of finding an isogeny between two given supersingular elliptic
+                            curves
+                            or two superspecial abelian surfaces defined over 𝔽<sub>p<sup>2</sup></sub>. Viewing these
+                            as path finding problems
+                            in a related isogeny graph, we introduce a general framework for solving these problems and
+                            present
+                            the state-of-the-art attacks against them. We will also discuss a strategy for improving
+                            their concrete
+                            complexity, based on joint work with Craig Costello, Sam Frengley and Jia Shi.</p>
+                    </details>
+                    <p class="fulljustify">
+                        <a href="https://www.mariascrs.com/" target="_blank">Personal page</a> •
+                        <a href="https://the-isogeny-club.github.io/3-maria-superlative-solver/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://youtu.be/rwEtpYlD9FU" target="_blank">Recording</a> •
+                        <a href="https://askcryp.to/t/18674" target="_blank">Discussion</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Antonin Leroux - A new algorithm for the effective Deuring correspondence: making SQISign
+                        faster</b><br />
+                    DGA,
+                    <br />
+                    <i>October 25th, 17:00 (CEST)</i>. <details>
+                        <summary>abstract</summary>
+                        <p> The quantum computer is a threat to cryptography as it can solve the problems upon which
+                            relies the security of a lot of protocols.
+                            Isogeny-based cryptography is a family of protocols relying on the hardness of finding an
+                            isogeny between two supersingular elliptic curves,
+                            a problem assumed hard even for a quantum computer. In this talk, we focus on the connection
+                            between isogeny-based cryptography
+                            and quaternion algebras called the Deuring correspondence. </p>
+
+                        <p>We will start with a generic overview of the applications of the Deuring correspondence to
+                            isogeny-based cryptography,
+                            before presenting a new algorithm to compute and realize the Deuring correspondence.
+                            In particular, this can be applied to speed-up the SQISign signature scheme.</p>
+                    </details>
+                    <p class="fulljustify">
+                        <a href="http://www.lix.polytechnique.fr/Labo/Antonin.LEROUX/" target="_blank">Personal page</a>
+                        •
+                        <a href="https://the-isogeny-club.github.io/4-antonin-deuring/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://youtu.be/2pAG3Pmsldk" target="_blank">Recording</a> •
+                        <a href="https://askcryp.to/t/18789" target="_blank">Discussion</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Tako Boris Fouotsa - Torsion point images in SIDH: from savior to killer</b><br />
+                    EPFL, <br />
+                    <i>November 8th, 17:00 (CET)</i>. <details>
+                        <summary>abstract</summary>
+                        <p> The first isogeny-based key exchange is the CRS (Couveignes - Rostovtsev - Stolbunov)
+                            scheme, which uses
+                            ordinary isogenies. The CRS scheme is relatively slow and is subject to a sub-exponential
+                            quantum attack.
+                            This motivated Jao and De Feo to suggest SIDH, which uses supersingular isogenies that, as
+                            opposed to ordinary
+                            isogenies, do not commute. To solve this commutativity issue, Jao and De Feo publish images
+                            of torsion points
+                            through the secret isogeny. SIDH was then faster and was not vulnerable to sub-exponential
+                            quantum attacks.</p>
+
+                        <p>Today, the picture has changed considerably. The torsion point images have been used to
+                            design both
+                            adaptive and passive attacks on SIDH. Recently, we reached the "point de non retour":
+                            they were used to design a polynomial classical attack on SIDH. </p>
+
+                        <p>In this talk, we will tell the story of the torsion point images in SIDH. We will go through
+                            their role
+                            in the design of SIDH, and in the design of both adaptive and passive attacks on SIDH.</p>
+                    </details>
+                </li>
+                <p class="fulljustify">
+                    <a href="https://borisfouotsa.github.io/" target="_blank">Personal page</a> •
+                    <a href="https://the-isogeny-club.github.io/5-boris-torsion-points/slides.pdf"
+                        target="_blank">Slides</a> •
+                    <a href="https://www.youtube.com/watch?v=ElFBMm8QEas" target="_blank">Recording</a> •
+                    <a href="https://askcryp.to/t/18919" target="_blank">Discussion</a>
                 </p>
-        </details>
-        <p class="halfjustify" >
-            <a href="https://sites.google.com/view/saraharpin/" target="_blank">Personal page</a> • 
-            <a href="https://the-isogeny-club.github.io/2-1-sarah-orientations/slides.pdf" target="_blank">Slides</a>  •  
-            <a href="https://www.youtube.com/watch?v=aqI68rEvNi4" target="_blank">Recording</a>
-        </p>
-    </li>
-    <br>
-    <li>
-        <b>Talk 2</b>, February 14th, 17:00 (CET). 
-    </li>
-    <br>
-    <li>
-        <b>Talk 3</b>, February 28th, 17:00 (CET). 
-    </li>
-    <br>
-    <li>
-        <b>Talk 4</b>, March 14th, 17:00 (CET). 
-    </li>
-    <br>
-    <li>
-        <b>Talk 5</b>, March 28th, 17:00 (CEST). 
-    </li>
-    <br>
-    <li>
-        <b>Talk 6</b>, April 11th, 17:00 (CEST). 
-    </li>
-</ol>
+                <br>
+                <li>
+                    <b>Sabrina Kunzweiler - Genus 2 Isogenies</b><br />
+                    Ruhr University Bochum<br />
+                    <i>November 22nd, 17:00 (CET)</i>. <details>
+                        <summary>abstract</summary>
+                        <p>
+                        <p>Elliptic curves are abelian varieties of dimension one. It is only natural to consider
+                            generalizations of isogeny-based
+                            cryptographic protocols to higher dimensions. Apart from mathematical curiosity, the recent
+                            attacks on SIDH have shown
+                            that it is essential to study such generalizations in order to understand the security of
+                            elliptic curve based protocols.</p>
 
-<br>
-<hr>
-<br>
+                        <p>This talk gives an introduction to Jacobians of genus-2 curves (abelian varieties of
+                            dimension 2) and isogenies in this setting.
+                            The focus lies on the computation of Richelot isogenies.</p>
+                        </p>
+                    </details>
+                    <p class="fulljustify">
+                        <a href="https://www.crypto.ruhr-uni-bochum.de/staff/kunzweiler.html.en"
+                            target="_blank">Personal page</a> •
+                        <a href="https://the-isogeny-club.github.io/6-sabrina-genus2-isogenies/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=D5fdpZyRFhQ" target="_blank">Recording</a> •
+                        <a href="https://askcryp.to/t/isogeny-club-talk-6-genus-2-isogenies/19004"
+                            target="_blank">Discussion</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Marc Houben - Horizontal racewalking using radical isogenies</b><br />
+                    Universiteit Leiden <br>
+                    <i>December 13th, 17:00 (CET)</i>.<br />
+                    <details>
+                        <summary>abstract</summary>
+                        <p>
+                            Radical isogeny formulae are equations that can be used to efficiently
+                            compute long chains of isogenies of small degree. Basically, they
+                            express the coefficients of the next curve in a chain of N-isogenies
+                            explicitly in terms of some expression involving the N-th root of a
+                            quantity depending on the Weierstrass coefficients of the input curve.
+                            One can prove that such an expression always exists, but finding it is
+                            a nontrivial task. We present a new method for finding radical isogeny
+                            formulae that extends the range for which we know them from N ≤ 13
+                            to N ≤ 37. </p>
 
+                        <p>We rewrite the existing and new formulae to optimize for
+                            fast evaluation. For even N, we present a conjecture that determines
+                            which N-th root must be taken in order to stay on the surface of the
+                            CSIDH isogeny graph, and we prove this conjecture for N ≤ 14. The
+                            combination of the above results in a speed up of a factor 3 for long
+                            chains of 2-isogenies over 512 bit prime fields, and we gain 12% over
+                            the previous implementation of CSIDH with radical isogenies.</p>
+                    </details>
+                    <p class="fulljustify">
+                        <a href="https://www.universiteitleiden.nl/en/staffmembers/marc-houben#tab-1"
+                            target="_blank">Personal page</a> •
+                        <a href="https://the-isogeny-club.github.io/7-marc-radical-isogenies/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=cvS7m1c_PNI" target="_blank">Recording</a> •
+                        <a href="https://askcryp.to/t/19105" target="_blank">Discussion</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Sarah Arpin - Orientations and Isogeny Graphs</b><br />
+                    Leiden University<br />
+                    <i>January 31st, 17:00 (CET)</i>.
+                    <details>
+                        <summary>abstract</summary>
+                        <p>To study supersingular isogeny graphs, one may add to the elliptic curves the information of
+                            an orientation,
+                            or a particular embedding of an imaginary quadratic field into the endomorphism ring of the
+                            curve.
+                            Recent cryptographic protocols (Séta, OSIDH) have made use of orientations to define new
+                            hard problems on
+                            supersingular isogeny graphs. The mathematics of orientations have been studied for a long
+                            time, but the
+                            algorithmic implications are just now being understood.</p>
+                        <p>As part of a recent Women in Numbers 5 (WIN5) collaboration, my collaborators and I use
+                            orientations towards
+                            two different goals: 1. path-finding algorithms in the supersingular ℓ-isogeny graph and 2.
+                            understanding
+                            and counting cycles in the supersingular ℓ-isogeny graph.
+                            In this talk, we will first introduce the theory of orientations and discuss the relevant
+                            hard problems.
+                            We will go on to describe the path-finding algorithms and the theory behind cycle-counting
+                            which stem from adding
+                            orientations to supersingular elliptic curves.
+                        </p>
+                    </details>
+                    <p class="halfjustify">
+                        <a href="https://sites.google.com/view/saraharpin/" target="_blank">Personal page</a> •
+                        <a href="https://the-isogeny-club.github.io/2-1-sarah-orientations/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=aqI68rEvNi4" target="_blank">Recording</a>
+                    </p>
+                </li>
+            </ol>
 
-<h3>Previous talks</h3>
-<ol class="full-justify" start="1">
-    <li>
-        <b>Thomas Decru - Breaking SIKE</b><br/>
-        KU Leuven<br/>
-        <i>September 13th, 17:00 (CEST)</i>. 
-        <details><summary>abstract</summary>
-            <p>Thomas paints a somewhat broader picture of the genus-2 isogeny setting
-                to showcase how Wouter Castryck and Thomas found all the pieces of the
-                puzzle to break SIKE.</p>
-            </details>
-        <p class="fulljustify">
-            <a href="https://www.esat.kuleuven.be/cosic/people/thomas-decru/" target="_blank">Personal page</a>   •  
-            <a href="https://the-isogeny-club.github.io/1-thomas-breaking-sike/slides.pdf" target="_blank">Slides</a>  •  
-            <a href="https://www.youtube.com/watch?v=mx9qNHm3mco" target="_blank">Recording</a>  •  
-            <a href="https://askcryp.to/t/18576" target="_blank">Discussion</a>
-        </p>
-    </li>
-    <br>
-    <li>
-        <b>Bruno Sterner - git commit -m “isogenies”</b><br/>
-        University of Surrey<br/>
-        <i>September 27th, 17:00 (CEST)</i>. <details><summary>abstract</summary>
-            <p>Supersingular isogeny graphs possess many properties that make it an interesting
-                object to study mathematically as well as attempt to apply for cryptographic purposes.
-                In this talk, Bruno will present one of these properties and showcase how it can be applied
-                to construct a commitment scheme. This commitment scheme has strong security properties
-                and doesn’t require random oracles.</p></details>
-            <p class="fulljustify">
-                <a href="https://www.surrey.ac.uk/people/bruno-sterner" target="_blank">Personal page</a> • 
-                <a href="https://the-isogeny-club.github.io/2-bruno-git-commit/slides.pdf" target="_blank">Slides</a>  •  
-                <a href="https://www.youtube.com/watch?v=5a-l3OJ88VQ" target="_blank">Recording</a>  •  
-                <a href="https://askcryp.to/t/18559" target="_blank">Discussion</a>          
+            <br>
+            <hr>
+            <br>
+
+            <h4 style="text-align: center;">
+                Reach <b><a href="https://jonathke.github.io/" target="_blank">Jonathan</a></b> and <b><a
+                        href="//krijnreijnders.com" target="_blank">Krijn</a></b>
+                <br>via <a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a> to join!
+            </h4>
+
+            <p style="text-align: center;">
+                Overview of discussion available at <b><a href="https://askcryp.to/tag/isogeny-club"
+                        target="_blank">askcryp.to</a></b>.
             </p>
-    </li>
-    <br>
-    <li>
-        <b>Maria Corte-Real Santos - [superlative]Solver: Attacking the General Isogeny Problem</b><br/>
-        University College London
-        <br/>
-        <i>October 11th, 17:00 (CEST)</i>. <details><summary>abstract</summary>
-            <p> The general supersingular isogeny problem is the foundational hardness assumption underpinning
-                isogeny-based cryptography. Its conjectured classical and quantum hardness has cemented isogenies
-                as a promising tool for building post-quantum secure protocols. </p>
+            <p style="text-align: center;">Researchseminars.org <b><a
+                        href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b>.</p>
+            <p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub"
+                        target="_blank">here</a></b>.</p>
+            <p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw"
+                        target="_blank">here</a></b>.</p>
 
-            <p>In this talk, we will look at the general isogeny problem in low dimensions. More specifically,
-                we consider the hardness of finding an isogeny between two given supersingular elliptic curves
-                or two superspecial abelian surfaces defined over 𝔽<sub>p<sup>2</sup></sub>. Viewing these as path finding problems
-                in a related isogeny graph, we introduce a general framework for solving these problems and present
-                the state-of-the-art attacks against them. We will also discuss a strategy for improving their concrete
-                complexity, based on joint work with Craig Costello, Sam Frengley and Jia Shi.</p></details>
-            <p class="fulljustify">
-                    <a href="https://www.mariascrs.com/" target="_blank">Personal page</a>   •  
-                    <a href="https://the-isogeny-club.github.io/3-maria-superlative-solver/slides.pdf" target="_blank">Slides</a>  • 
-                    <a href="https://youtu.be/rwEtpYlD9FU" target="_blank">Recording</a>  •  
-                    <a href="https://askcryp.to/t/18674" target="_blank">Discussion</a>
-            </p>
-    </li>
-    <br>
-    <li>
-        <b>Antonin Leroux - A new algorithm for the effective Deuring correspondence: making SQISign faster</b><br/>
-        DGA, 
-        <br/>
-        <i>October 25th, 17:00 (CEST)</i>. <details><summary>abstract</summary>
-            <p> The quantum computer is a threat to cryptography as it can solve the problems upon which relies the security of a lot of protocols.
-                Isogeny-based cryptography is a family of protocols relying on the hardness of finding an isogeny between two supersingular elliptic curves,
-                a problem assumed hard even for a quantum computer. In this talk, we focus on the connection between isogeny-based cryptography
-                and quaternion algebras called the Deuring correspondence. </p>
-                
-            <p>We will start with a generic overview of the applications of the Deuring correspondence to isogeny-based cryptography,
-                before presenting a new algorithm to compute and realize the Deuring correspondence.
-                In particular, this can be applied to speed-up the SQISign signature scheme.</p></details>
-            <p class="fulljustify">
-                    <a href="http://www.lix.polytechnique.fr/Labo/Antonin.LEROUX/" target="_blank">Personal page</a> • 
-                    <a href="https://the-isogeny-club.github.io/4-antonin-deuring/slides.pdf" target="_blank">Slides</a>  • 
-                    <a href="https://youtu.be/2pAG3Pmsldk" target="_blank">Recording</a>  •  
-                    <a href="https://askcryp.to/t/18789" target="_blank">Discussion</a>          
-            </p>
-    </li>
-    <br>
-    <li>
-        <b>Tako Boris Fouotsa - Torsion point images in SIDH: from savior to killer</b><br/>
-        EPFL, <br/>
-        <i>November 8th, 17:00 (CET)</i>. <details><summary>abstract</summary>
-            <p> The first isogeny-based key exchange is the CRS (Couveignes - Rostovtsev - Stolbunov) scheme, which uses
-                ordinary isogenies. The CRS scheme is relatively slow and is subject to a sub-exponential quantum attack.
-                This motivated Jao and De Feo to suggest SIDH, which uses supersingular isogenies that, as opposed to ordinary
-                isogenies, do not commute. To solve this commutativity issue, Jao and De Feo publish images of torsion points
-                through the secret isogeny. SIDH was then faster and was not vulnerable to sub-exponential quantum attacks.</p>
 
-            <p>Today, the picture has changed considerably. The torsion point images have been used to design both
-                adaptive and passive attacks on SIDH. Recently, we reached the "point de non retour":
-                they were used to design a polynomial classical attack on SIDH. </p>
-                
-            <p>In this talk, we will tell the story of the torsion point images in SIDH. We will go through their role
-                in the design of SIDH, and in the design of both adaptive and passive attacks on SIDH.</p></details>
-    </li>
-    <p class="fulljustify">
-        <a href="https://borisfouotsa.github.io/" target="_blank">Personal page</a> • 
-        <a href="https://the-isogeny-club.github.io/5-boris-torsion-points/slides.pdf" target="_blank">Slides</a>  • 
-        <a href="https://www.youtube.com/watch?v=ElFBMm8QEas" target="_blank">Recording</a>  •  
-        <a href="https://askcryp.to/t/18919" target="_blank">Discussion</a>               
-    </p>
-    <br>
-    <li>
-        <b>Sabrina Kunzweiler - Genus 2 Isogenies</b><br/>
-        Ruhr University Bochum<br/>
-        <i>November 22nd, 17:00 (CET)</i>. <details><summary>abstract</summary><p>
-        <p>Elliptic curves are abelian varieties of dimension one. It is only natural to consider generalizations of isogeny-based
-        cryptographic protocols to higher dimensions. Apart from mathematical curiosity, the recent attacks on SIDH have shown
-        that it is essential to study such generalizations in order to understand the security of elliptic curve based protocols.</p>
-
-        <p>This talk gives an introduction to Jacobians of genus-2 curves (abelian varieties of dimension 2) and isogenies in this setting.
-        The focus lies on the computation of Richelot isogenies.</p>
-        </p></details>
-    <p class="fulljustify">
-            <a href="https://www.crypto.ruhr-uni-bochum.de/staff/kunzweiler.html.en" target="_blank">Personal page</a> • 
-            <a href="https://the-isogeny-club.github.io/6-sabrina-genus2-isogenies/slides.pdf" target="_blank">Slides</a>  • 
-            <a href="https://www.youtube.com/watch?v=D5fdpZyRFhQ" target="_blank">Recording</a>  •  
-            <a href="https://askcryp.to/t/isogeny-club-talk-6-genus-2-isogenies/19004" target="_blank">Discussion</a> 
-    </p>
-    </li>
-    <br>
-    <li>
-        <b>Marc Houben - Horizontal racewalking using radical isogenies</b><br/>
-        Universiteit Leiden <br>
-        <i>December 13th, 17:00 (CET)</i>.<br/>
-        <details><summary>abstract</summary><p>
-            Radical isogeny formulae are equations that can be used to efficiently
-            compute long chains of isogenies of small degree. Basically, they
-            express the coefficients of the next curve in a chain of N-isogenies
-            explicitly in terms of some expression involving the N-th root of a
-            quantity depending on the Weierstrass coefficients of the input curve.
-            One can prove that such an expression always exists, but finding it is
-            a nontrivial task. We present a new method for finding radical isogeny
-            formulae that extends the range for which we know them from N ≤ 13
-            to N ≤ 37. </p>
-            
-            <p>We rewrite the existing and new formulae to optimize for
-            fast evaluation. For even N, we present a conjecture that determines
-            which N-th root must be taken in order to stay on the surface of the
-            CSIDH isogeny graph, and we prove this conjecture for N ≤ 14. The
-            combination of the above results in a speed up of a factor 3 for long
-            chains of 2-isogenies over 512 bit prime fields, and we gain 12% over
-            the previous implementation of CSIDH with radical isogenies.</p></details>
-    <p class="fulljustify">
-        <a href="https://www.universiteitleiden.nl/en/staffmembers/marc-houben#tab-1" target="_blank">Personal page</a>   •  
-        <a href="https://the-isogeny-club.github.io/7-marc-radical-isogenies/slides.pdf" target="_blank">Slides</a>  • 
-        <a href="https://www.youtube.com/watch?v=cvS7m1c_PNI" target="_blank">Recording</a>  •  
-        <a href="https://askcryp.to/t/19105" target="_blank">Discussion</a>
-    </p>
-    </li>
-</ol>
-
-<br>
-<hr>
-<br>
-
-<h4 style="text-align: center;">
-Reach <b><a href="https://jonathke.github.io/" target="_blank">Jonathan</a></b> and <b><a href="//krijnreijnders.com" target="_blank">Krijn</a></b>
-<br>via <a href="mailto:isogenyclub@gmail.com" target="_blank">isogenyclub@gmail.com</a> to join!
-</h4>
-
-<p style="text-align: center;">
-    Overview of discussion available at <b><a href="https://askcryp.to/tag/isogeny-club" target="_blank">askcryp.to</a></b>.
-</p>
-<p style="text-align: center;">Researchseminars.org <b><a href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b>.</p>
-<p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub" target="_blank">here</a></b>.</p>
-<p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw" target="_blank">here</a></b>.</p>
-
-    
-</div>
-</main>
+        </div>
+    </main>
