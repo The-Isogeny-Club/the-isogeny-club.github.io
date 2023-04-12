@@ -207,8 +207,164 @@
             <p style="text-align: center;">A seminar session for young isogenists.</p>
             <br>
 
-            <h2>Season two talks</h2>
-            <ol class="fulljustify" start="6">
+            <h2>Season three</h2>
+            <p>The schedule for Season three of The Isogeny Club is to be finalised.
+                For now, the focus is on the</p>
+                <p style="text-align: center;"><a href="eurocrypt" target="_blank">Brainstorm Sessions</a></p>
+            <p>at Eurocrypt on April 22th, Lyon, France.
+            </p>
+            <!-- <ol class="fulljustify" start="6">
+
+                <br><br>
+                <li><b>Eurocrypt - Brainstorm Sessions</b><br> April 22th, Lyon,  France. <br>
+                        <a href="eurocrypt" target="_blank">Page</a>
+                </li>
+            </ol> -->
+            <br>
+            <hr>
+            <br>
+            <br>
+
+            <h2>Previous talks</h2>
+            <h3>Season two</h3>
+            <ol class="full-justify" start="1">
+                <li>
+                    <b>Sarah Arpin - Orientations and Isogeny Graphs</b><br />
+                    Leiden University<br />
+                    <i>January 31st, 17:00 (CET)</i>.
+                    <details>
+                        <summary>abstract</summary>
+                        <p>To study supersingular isogeny graphs, one may add to the elliptic curves the information of
+                            an orientation,
+                            or a particular embedding of an imaginary quadratic field into the endomorphism ring of the
+                            curve.
+                            Recent cryptographic protocols (Séta, OSIDH) have made use of orientations to define new
+                            hard problems on
+                            supersingular isogeny graphs. The mathematics of orientations have been studied for a long
+                            time, but the
+                            algorithmic implications are just now being understood.</p>
+                        <p>As part of a recent Women in Numbers 5 (WIN5) collaboration, my collaborators and I use
+                            orientations towards
+                            two different goals: 1. path-finding algorithms in the supersingular ℓ-isogeny graph and 2.
+                            understanding
+                            and counting cycles in the supersingular ℓ-isogeny graph.
+                            In this talk, we will first introduce the theory of orientations and discuss the relevant
+                            hard problems.
+                            We will go on to describe the path-finding algorithms and the theory behind cycle-counting
+                            which stem from adding
+                            orientations to supersingular elliptic curves.
+                        </p>
+                    </details>
+                    <p class="halfjustify">
+                        <a href="https://sites.google.com/view/saraharpin/" target="_blank">Personal page</a> •
+                        <a href="https://the-isogeny-club.github.io/2-1-sarah-orientations/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=aqI68rEvNi4" target="_blank">Recording</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Andrea Basso - A Post-Quantum Oblivious PRF from Isogenies</b><br>
+                    University of Bristol<br>
+                    <i>February 14th, 17:00 (CET).</i>
+                    <details>
+                        <summary>abstract</summary>
+                        <p>An oblivious pseudorandom function, or OPRF, is an important primitive that is 
+                            used to build many advanced cryptographic protocols. 
+                            Despite its relevance, very few post-quantum solutions exist.</p>
+
+                        <p>In this talk, we present a novel OPRF protocol that is post-quantum, verifiable,
+                            round-optimal, and moderately compact. The protocol is based on a previous SIDH-based
+                            construction by Boneh et al., which was later shown to be insecure due to an attack on
+                            its one-more unpredictability. We propose an efficient countermeasure against this attack,
+                            and we demonstrate how to adapt the protocol to work with the countermeasures against
+                            the SIDH attacks. To achieve this, we also propose the first proof of isogeny knowledge
+                            that is compatible with masked torsion points, which may be of independent interest.
+                            We also design a novel non-interactive proof of knowledge of parallel isogenies,
+                            which reduces the number of communication rounds of the OPRF to the theoretically-optimal two.
+                            Putting everything together, we obtain the most compact post-quantum verifiable OPRF protocol.
+                        </p>
+                    </details>
+                    <p class="halfjustify">
+                        <a href="https://t.co/7zDyklxcoy" target="_blank">Personal page</a>
+                         • <a href="https://the-isogeny-club.github.io/2-2-andrea-oprf/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=3qP66h_TPmU" target="_blank">Recording</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Jonathan Komada Eriksen - Deuring for the People!</b><br>
+                    NTNU<br>
+                    <i>February 28th, 17:00 (CET).</i>
+                    <details>
+                        <summary>abstract</summary>
+                        <p>In Season one, talk four of the Isogeny Club, we saw a presentation on 
+                            computing the Deuring correspondence. The efficiency of this computation 
+                            depends a lot on the characteristic one is working over, and applications 
+                            such as SQIsign, require primes p of a special form to do this computation. 
+                            In this presentation, we look at computing the Deuring correspondence in 
+                            general characteristic, i.e. without assuming any special form of the prime
+                            p being used. We start by recalling a "standard" algorithm for computing 
+                            the Deuring correspondence, before discussing specific optimisations for 
+                            the case of general characteristic.</p>
+                    </details>
+                    <p class="halfjustify">
+                        <a href="https://jonathke.github.io/" target="_blank">Personal page</a>
+                        • <a href="https://the-isogeny-club.github.io/2-3-jonathan-deuring/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=blwtqGDWOZg" target="_blank">Recording</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Michael Meyer - SQISign primes: Fantastic p's and where to find them</b><br>
+                    University of Regensburg <br>
+                    <i>March 14th, 17:00 (CET).</i> <br>
+                    <details>
+                        <summary>abstract</summary>
+                        <p>As discussed in the Isogeny Club talks by Antonin Leroux and Jonathan Komada 
+                            Eriksen, SQISign requires a special prime characteristic in order to be 
+                            efficient. In particular, we require a large factor of p^2-1 to be smooth. 
+                            In this talk, we discuss the related problem of finding twin smooth integers 
+                            via two different methods: the PTE-sieve that uses solutions to the 
+                            Prouhet-Tarry-Escott problem, and an algorithm by Conrey-Holmstrom-McLaughlin. 
+                            Although most of our results are not directly applicable to SQISign, we show 
+                            how smaller twin smooths can be used to construct SQISign-friendly primes. 
+                            Our approach is especially suitable for finding parameters for the NIST-III 
+                            and NIST-V security levels.</p>
+                    </details>
+                    <p class="halfjustify">
+                        <a href="https://www.uni-regensburg.de/informatics-data-science/qpc/team/dr-michael-meyer/index.html" target="_blank">Personal page</a>
+                        • <a href="https://the-isogeny-club.github.io/2-4-michael-sqisign-primes/slides.pdf"
+                            target="_blank">Slides</a> •
+                        <a href="https://www.youtube.com/watch?v=qSia5JLgKME" target="_blank">Recording</a>
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>Pierrick Dartois - SQISignHD: signing with higher dimensional isogenies</b><br> 
+                    INRIA Bordeaux <br>
+                    <i>March 28th, 17:00 (CEST).</i><br>
+                    <details>
+                        <summary>abstract</summary>
+                        <p>The SQISign isogeny-based post-quantum digital signature scheme introduced by
+                            De Feo, Kohel, Leroux, Petit and Wesolowski outputs very compact signatures
+                            at the expense of a high signature time. In this talk, we introduce a new scheme
+                            based on SQISign and the polynomial time torsion point attacks against SIDH due to
+                            Castryck, Decru, Maino, Martindale and Robert to sign with higher dimensional isogenies.
+                            This scheme remains to be implemented but we expect a significant signature time
+                            improvement, better security properties and signatures even more compact than in
+                            the original SQISign scheme.</p>
+                    </details>
+                    <p class="halfjustify">
+                    <a href="https://www.pierrickdartois.fr/homepage/" target="_blank">Personal page</a>
+                    • <a href="https://the-isogeny-club.github.io/2-5-pierrick-sqisignhd/slides.pdf"
+                    target="_blank">Slides</a> •
+                <a href="https://www.youtube.com/watch?v=o4ijEsSuIj0" target="_blank">Recording</a>                    
+                    </p>
+                </li>
+                <br>
                 <li>
                     <b>Valerie Gilchrist - Evaluating rational isogenies with irrational kernel points</b><br> 
                     Université Libre de Bruxelles <br>
@@ -221,19 +377,17 @@
                             
                             In this talk we will present some new algorithms for this and related problems.</p>
                     </details>
-                    <a href="https://vgilchri.github.io/" target="_blank">Personal Page</a>
-                </li>
-                <br><br>
-                <li><b>Eurocrypt - Brainstorm Sessions</b><br> April 22th, Lyon,  France. <br>
-                        <a href="eurocrypt" target="_blank">Page</a>
+                    <p class="halfjustify">
+                    <a href="https://vgilchri.github.io/" target="_blank">Personal page</a>
+                    • <a href="https://the-isogeny-club.github.io/2-6-valerie-evaluating/slides.pdf"
+                    target="_blank">Slides</a> •
+                <a href="https://www.youtube.com/watch?v=K4QUpD8h0mU" target="_blank">Recording</a>                    
+                    </p>
                 </li>
             </ol>
             <br>
             <hr>
             <br>
-            <br>
-
-            <h2>Previous talks</h2>
             <h3>Season one</h3>
             <ol class="full-justify" start="1">
                 <li>
@@ -437,146 +591,7 @@
                     </p>
                 </li>
             </ol>
-            <h3>Season two</h3>
-            <ol class="full-justify" start="1">
-                <li>
-                    <b>Sarah Arpin - Orientations and Isogeny Graphs</b><br />
-                    Leiden University<br />
-                    <i>January 31st, 17:00 (CET)</i>.
-                    <details>
-                        <summary>abstract</summary>
-                        <p>To study supersingular isogeny graphs, one may add to the elliptic curves the information of
-                            an orientation,
-                            or a particular embedding of an imaginary quadratic field into the endomorphism ring of the
-                            curve.
-                            Recent cryptographic protocols (Séta, OSIDH) have made use of orientations to define new
-                            hard problems on
-                            supersingular isogeny graphs. The mathematics of orientations have been studied for a long
-                            time, but the
-                            algorithmic implications are just now being understood.</p>
-                        <p>As part of a recent Women in Numbers 5 (WIN5) collaboration, my collaborators and I use
-                            orientations towards
-                            two different goals: 1. path-finding algorithms in the supersingular ℓ-isogeny graph and 2.
-                            understanding
-                            and counting cycles in the supersingular ℓ-isogeny graph.
-                            In this talk, we will first introduce the theory of orientations and discuss the relevant
-                            hard problems.
-                            We will go on to describe the path-finding algorithms and the theory behind cycle-counting
-                            which stem from adding
-                            orientations to supersingular elliptic curves.
-                        </p>
-                    </details>
-                    <p class="halfjustify">
-                        <a href="https://sites.google.com/view/saraharpin/" target="_blank">Personal page</a> •
-                        <a href="https://the-isogeny-club.github.io/2-1-sarah-orientations/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=aqI68rEvNi4" target="_blank">Recording</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Andrea Basso - A Post-Quantum Oblivious PRF from Isogenies</b><br>
-                    University of Bristol<br>
-                    <i>February 14th, 17:00 (CET).</i>
-                    <details>
-                        <summary>abstract</summary>
-                        <p>An oblivious pseudorandom function, or OPRF, is an important primitive that is 
-                            used to build many advanced cryptographic protocols. 
-                            Despite its relevance, very few post-quantum solutions exist.</p>
 
-                        <p>In this talk, we present a novel OPRF protocol that is post-quantum, verifiable,
-                            round-optimal, and moderately compact. The protocol is based on a previous SIDH-based
-                            construction by Boneh et al., which was later shown to be insecure due to an attack on
-                            its one-more unpredictability. We propose an efficient countermeasure against this attack,
-                            and we demonstrate how to adapt the protocol to work with the countermeasures against
-                            the SIDH attacks. To achieve this, we also propose the first proof of isogeny knowledge
-                            that is compatible with masked torsion points, which may be of independent interest.
-                            We also design a novel non-interactive proof of knowledge of parallel isogenies,
-                            which reduces the number of communication rounds of the OPRF to the theoretically-optimal two.
-                            Putting everything together, we obtain the most compact post-quantum verifiable OPRF protocol.
-                        </p>
-                    </details>
-                    <p class="halfjustify">
-                        <a href="https://t.co/7zDyklxcoy" target="_blank">Personal page</a>
-                         • <a href="https://the-isogeny-club.github.io/2-2-andrea-oprf/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=3qP66h_TPmU" target="_blank">Recording</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Jonathan Komada Eriksen - Deuring for the People!</b><br>
-                    NTNU<br>
-                    <i>February 28th, 17:00 (CET).</i>
-                    <details>
-                        <summary>abstract</summary>
-                        <p>In Season one, talk four of the Isogeny Club, we saw a presentation on 
-                            computing the Deuring correspondence. The efficiency of this computation 
-                            depends a lot on the characteristic one is working over, and applications 
-                            such as SQIsign, require primes p of a special form to do this computation. 
-                            In this presentation, we look at computing the Deuring correspondence in 
-                            general characteristic, i.e. without assuming any special form of the prime
-                            p being used. We start by recalling a "standard" algorithm for computing 
-                            the Deuring correspondence, before discussing specific optimisations for 
-                            the case of general characteristic.</p>
-                    </details>
-                    <p class="halfjustify">
-                        <a href="https://jonathke.github.io/" target="_blank">Personal page</a>
-                        • <a href="https://the-isogeny-club.github.io/2-3-jonathan-deuring/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=blwtqGDWOZg" target="_blank">Recording</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Michael Meyer - SQISign primes: Fantastic p's and where to find them</b><br>
-                    University of Regensburg <br>
-                    <i>March 14th, 17:00 (CET).</i> <br>
-                    <details>
-                        <summary>abstract</summary>
-                        <p>As discussed in the Isogeny Club talks by Antonin Leroux and Jonathan Komada 
-                            Eriksen, SQISign requires a special prime characteristic in order to be 
-                            efficient. In particular, we require a large factor of p^2-1 to be smooth. 
-                            In this talk, we discuss the related problem of finding twin smooth integers 
-                            via two different methods: the PTE-sieve that uses solutions to the 
-                            Prouhet-Tarry-Escott problem, and an algorithm by Conrey-Holmstrom-McLaughlin. 
-                            Although most of our results are not directly applicable to SQISign, we show 
-                            how smaller twin smooths can be used to construct SQISign-friendly primes. 
-                            Our approach is especially suitable for finding parameters for the NIST-III 
-                            and NIST-V security levels.</p>
-                    </details>
-                    <p class="halfjustify">
-                        <a href="https://www.uni-regensburg.de/informatics-data-science/qpc/team/dr-michael-meyer/index.html" target="_blank">Personal page</a>
-                        • <a href="https://the-isogeny-club.github.io/2-4-michael-sqisign-primes/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=qSia5JLgKME" target="_blank">Recording</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Pierrick Dartois - SQISignHD: signing with higher dimensional isogenies</b><br> 
-                    INRIA Bordeaux <br>
-                    <i>March 28th, 17:00 (CEST).</i><br>
-                    <details>
-                        <summary>abstract</summary>
-                        <p>The SQISign isogeny-based post-quantum digital signature scheme introduced by
-                            De Feo, Kohel, Leroux, Petit and Wesolowski outputs very compact signatures
-                            at the expense of a high signature time. In this talk, we introduce a new scheme
-                            based on SQISign and the polynomial time torsion point attacks against SIDH due to
-                            Castryck, Decru, Maino, Martindale and Robert to sign with higher dimensional isogenies.
-                            This scheme remains to be implemented but we expect a significant signature time
-                            improvement, better security properties and signatures even more compact than in
-                            the original SQISign scheme.</p>
-                    </details>
-                    <p class="halfjustify">
-                    <a href="https://www.pierrickdartois.fr/homepage/" target="_blank">Personal page</a>
-                    • <a href="https://the-isogeny-club.github.io/2-5-pierrick-sqisignhd/slides.pdf"
-                    target="_blank">Slides</a> •
-                <a href="https://www.youtube.com/watch?v=o4ijEsSuIj0" target="_blank">Recording</a>
-                    
-                    </p>
-                </li>
-            </ol>
 
             <br>
             <hr>
