@@ -1,0 +1,15 @@
+<p>An oblivious pseudorandom function, or OPRF, is an important primitive that is 
+    used to build many advanced cryptographic protocols. 
+    Despite its relevance, very few post-quantum solutions exist.</p>
+
+<p>In this talk, we present a novel OPRF protocol that is post-quantum, verifiable,
+    round-optimal, and moderately compact. The protocol is based on a previous SIDH-based
+    construction by Boneh et al., which was later shown to be insecure due to an attack on
+    its one-more unpredictability. We propose an efficient countermeasure against this attack,
+    and we demonstrate how to adapt the protocol to work with the countermeasures against
+    the SIDH attacks. To achieve this, we also propose the first proof of isogeny knowledge
+    that is compatible with masked torsion points, which may be of independent interest.
+    We also design a novel non-interactive proof of knowledge of parallel isogenies,
+    which reduces the number of communication rounds of the OPRF to the theoretically-optimal two.
+    Putting everything together, we obtain the most compact post-quantum verifiable OPRF protocol.
+</p>

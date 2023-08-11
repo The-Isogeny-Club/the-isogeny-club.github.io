@@ -224,372 +224,250 @@
 
             <h2>Previous talks</h2>
             <h3>Season two</h3>
-            <ol class="full-justify" start="1">
-                <li>
-                    <b>Sarah Arpin - Orientations and Isogeny Graphs</b><br />
-                    Leiden University<br />
-                    <i>January 31st, 17:00 (CET)</i>.
-                    <details>
-                        <summary>abstract</summary>
-                        <p>To study supersingular isogeny graphs, one may add to the elliptic curves the information of
-                            an orientation,
-                            or a particular embedding of an imaginary quadratic field into the endomorphism ring of the
-                            curve.
-                            Recent cryptographic protocols (Séta, OSIDH) have made use of orientations to define new
-                            hard problems on
-                            supersingular isogeny graphs. The mathematics of orientations have been studied for a long
-                            time, but the
-                            algorithmic implications are just now being understood.</p>
-                        <p>As part of a recent Women in Numbers 5 (WIN5) collaboration, my collaborators and I use
-                            orientations towards
-                            two different goals: 1. path-finding algorithms in the supersingular ℓ-isogeny graph and 2.
-                            understanding
-                            and counting cycles in the supersingular ℓ-isogeny graph.
-                            In this talk, we will first introduce the theory of orientations and discuss the relevant
-                            hard problems.
-                            We will go on to describe the path-finding algorithms and the theory behind cycle-counting
-                            which stem from adding
-                            orientations to supersingular elliptic curves.
-                        </p>
-                    </details>
-                    <p class="halfjustify">
-                        <a href="https://sites.google.com/view/saraharpin/" target="_blank">Personal page</a> •
-                        <a href="https://the-isogeny-club.github.io/2-1-sarah-orientations/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=aqI68rEvNi4" target="_blank">Recording</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Andrea Basso - A Post-Quantum Oblivious PRF from Isogenies</b><br>
-                    University of Bristol<br>
-                    <i>February 14th, 17:00 (CET).</i>
-                    <details>
-                        <summary>abstract</summary>
-                        <p>An oblivious pseudorandom function, or OPRF, is an important primitive that is 
-                            used to build many advanced cryptographic protocols. 
-                            Despite its relevance, very few post-quantum solutions exist.</p>
+            <ol class="full-justify" start="1"; id="season2"></ol>
+                <script>
+                    function loadListData() {
+                        fetch('season2.txt')
+                            .then(response => response.text())
+                            .then(data => {
+                                var list = document.getElementById('season2');
+                                var lines = data.split('\n');
+    
+                                lines.forEach(function (line) {
+                                    var listItem = document.createElement('li');
+                                    listItem.classList.add('list-item');
+                                    var folder = 'season-2/' + line;
 
-                        <p>In this talk, we present a novel OPRF protocol that is post-quantum, verifiable,
-                            round-optimal, and moderately compact. The protocol is based on a previous SIDH-based
-                            construction by Boneh et al., which was later shown to be insecure due to an attack on
-                            its one-more unpredictability. We propose an efficient countermeasure against this attack,
-                            and we demonstrate how to adapt the protocol to work with the countermeasures against
-                            the SIDH attacks. To achieve this, we also propose the first proof of isogeny knowledge
-                            that is compatible with masked torsion points, which may be of independent interest.
-                            We also design a novel non-interactive proof of knowledge of parallel isogenies,
-                            which reduces the number of communication rounds of the OPRF to the theoretically-optimal two.
-                            Putting everything together, we obtain the most compact post-quantum verifiable OPRF protocol.
-                        </p>
-                    </details>
-                    <p class="halfjustify">
-                        <a href="https://t.co/7zDyklxcoy" target="_blank">Personal page</a>
-                         • <a href="https://the-isogeny-club.github.io/2-2-andrea-oprf/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=3qP66h_TPmU" target="_blank">Recording</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Jonathan Komada Eriksen - Deuring for the People!</b><br>
-                    NTNU<br>
-                    <i>February 28th, 17:00 (CET).</i>
-                    <details>
-                        <summary>abstract</summary>
-                        <p>In Season one, talk four of the Isogeny Club, we saw a presentation on 
-                            computing the Deuring correspondence. The efficiency of this computation 
-                            depends a lot on the characteristic one is working over, and applications 
-                            such as SQIsign, require primes p of a special form to do this computation. 
-                            In this presentation, we look at computing the Deuring correspondence in 
-                            general characteristic, i.e. without assuming any special form of the prime
-                            p being used. We start by recalling a "standard" algorithm for computing 
-                            the Deuring correspondence, before discussing specific optimisations for 
-                            the case of general characteristic.</p>
-                    </details>
-                    <p class="halfjustify">
-                        <a href="https://jonathke.github.io/" target="_blank">Personal page</a>
-                        • <a href="https://the-isogeny-club.github.io/2-3-jonathan-deuring/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=blwtqGDWOZg" target="_blank">Recording</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Michael Meyer - SQISign primes: Fantastic p's and where to find them</b><br>
-                    University of Regensburg <br>
-                    <i>March 14th, 17:00 (CET).</i> <br>
-                    <details>
-                        <summary>abstract</summary>
-                        <p>As discussed in the Isogeny Club talks by Antonin Leroux and Jonathan Komada 
-                            Eriksen, SQISign requires a special prime characteristic in order to be 
-                            efficient. In particular, we require a large factor of p^2-1 to be smooth. 
-                            In this talk, we discuss the related problem of finding twin smooth integers 
-                            via two different methods: the PTE-sieve that uses solutions to the 
-                            Prouhet-Tarry-Escott problem, and an algorithm by Conrey-Holmstrom-McLaughlin. 
-                            Although most of our results are not directly applicable to SQISign, we show 
-                            how smaller twin smooths can be used to construct SQISign-friendly primes. 
-                            Our approach is especially suitable for finding parameters for the NIST-III 
-                            and NIST-V security levels.</p>
-                    </details>
-                    <p class="halfjustify">
-                        <a href="https://www.uni-regensburg.de/informatics-data-science/qpc/team/dr-michael-meyer/index.html" target="_blank">Personal page</a>
-                        • <a href="https://the-isogeny-club.github.io/2-4-michael-sqisign-primes/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=qSia5JLgKME" target="_blank">Recording</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Pierrick Dartois - SQISignHD: signing with higher dimensional isogenies</b><br> 
-                    INRIA Bordeaux <br>
-                    <i>March 28th, 17:00 (CEST).</i><br>
-                    <details>
-                        <summary>abstract</summary>
-                        <p>The SQISign isogeny-based post-quantum digital signature scheme introduced by
-                            De Feo, Kohel, Leroux, Petit and Wesolowski outputs very compact signatures
-                            at the expense of a high signature time. In this talk, we introduce a new scheme
-                            based on SQISign and the polynomial time torsion point attacks against SIDH due to
-                            Castryck, Decru, Maino, Martindale and Robert to sign with higher dimensional isogenies.
-                            This scheme remains to be implemented but we expect a significant signature time
-                            improvement, better security properties and signatures even more compact than in
-                            the original SQISign scheme.</p>
-                    </details>
-                    <p class="halfjustify">
-                    <a href="https://www.pierrickdartois.fr/homepage/" target="_blank">Personal page</a>
-                    • <a href="https://the-isogeny-club.github.io/2-5-pierrick-sqisignhd/slides.pdf"
-                    target="_blank">Slides</a> •
-                <a href="https://www.youtube.com/watch?v=o4ijEsSuIj0" target="_blank">Recording</a>                    
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Valerie Gilchrist - Evaluating rational isogenies with irrational kernel points</b><br> 
-                    Université Libre de Bruxelles <br>
-                    <i>April 11th, 17:00 (CEST).</i><br>
-                    <details>
-                        <summary>abstract</summary>
-                        <p> An isogeny can be defined over a given field even when its kernel generators, 
-                            which we need for efficient Vélu formulae, are only defined over some extension.
-                            How can we efficiently evaluate these isogenies?
-                            
-                            In this talk we will present some new algorithms for this and related problems.</p>
-                    </details>
-                    <p class="halfjustify">
-                    <a href="https://vgilchri.github.io/" target="_blank">Personal page</a>
-                    • <a href="https://the-isogeny-club.github.io/2-6-valerie-evaluating/slides.pdf"
-                    target="_blank">Slides</a> •
-                <a href="https://www.youtube.com/watch?v=K4QUpD8h0mU" target="_blank">Recording</a>                    
-                    </p>
-                </li>
-            </ol>
+                                    var talkDiv = document.createElement('div');
+
+                                    var infoHeading = document.createElement('div');
+                                    var abstractHeading = document.createElement('details');
+                                    var urlHeading = document.createElement('p');
+                                    urlHeading.classList.add('halfjustify');
+
+                                    fetch(folder + '/info.txt')
+                                        .then(response => response.text())
+                                        .then(innerdata => {
+                                            var values = innerdata.split('\n');
+                                            var name = values[0];
+                                            var title = values[1];
+                                            var university = values[2];
+                                            var date = values[3];   
+
+                                            var nameHeading = document.createElement('b');
+                                            nameHeading.textContent = name + " - " + title;
+                                            infoHeading.appendChild(nameHeading);
+                                            infoHeading.appendChild(document.createElement('br'));
+
+                                            var uniHeading = document.createElement('span');
+                                            uniHeading.textContent = university;
+                                            infoHeading.appendChild(uniHeading);
+                                            infoHeading.appendChild(document.createElement('br'));
+
+                                            var timeHeading = document.createElement('i');
+                                            timeHeading.textContent = date;
+                                            infoHeading.appendChild(timeHeading);
+                                        });                                   
+
+                                    fetch(folder + "/abstract.txt")
+                                        .then(response => response.text())
+                                        .then(text => {
+                                            var summaryElement = document.createElement("summary");
+                                            summaryElement.textContent = "abstract";
+                                            var bodyElement = document.createElement("span");
+                                            bodyElement.innerHTML = text;
+
+                                            abstractHeading.appendChild(summaryElement);
+                                            abstractHeading.appendChild(bodyElement);
+                                        })
+                                        .catch(error => {
+                                            console.error("Error fetching the text file:", error);
+                                        });
+
+                                    fetch(folder + '/info.txt')
+                                        .then(response => response.text())
+                                        .then(innerdata => {
+                                            var values = innerdata.split('\n');
+                                            var pageurl = values[4];
+                                            var slidebool = values[5];
+                                            var recordingurl = values[6];
+
+                                            var page = document.createElement('a');
+                                            page.href = pageurl;
+                                            page.textContent = 'Personal page';
+                                            urlHeading.appendChild(page);
+
+                                            if (slidebool == 'yes'){
+                                                var bullet1 = document.createElement('span');
+                                                bullet1.textContent = " • ";
+                                                urlHeading.appendChild(bullet1);
+
+                                                var slides = document.createElement('a');
+                                                slides.href = "https://the-isogeny-club.github.io/" + line + "/slides.pdf";
+                                                slides.textContent = 'Slides';
+                                                urlHeading.appendChild(slides);
+                                            }
+
+                                            if (recordingurl != 'no'){
+                                                var bullet2 = document.createElement('span');
+                                                bullet2.textContent = " • ";
+                                                urlHeading.appendChild(bullet2);
+
+                                                var recording = document.createElement('a');
+                                                recording.href = recordingurl;
+                                                recording.textContent = 'Recording';
+                                                urlHeading.appendChild(recording);
+                                            }
+                                        });     
+    
+                                    talkDiv.appendChild(infoHeading);
+                                    talkDiv.appendChild(abstractHeading);
+                                    talkDiv.appendChild(urlHeading);
+
+                                    listItem.appendChild(talkDiv);
+                                    
+                                    list.appendChild(listItem);
+                                    list.appendChild(document.createElement('br'));
+                                });
+                            });
+                    }
+    
+                    loadListData();
+                </script>
+
+            
             <br>
             <hr>
             <br>
+
             <h3>Season one</h3>
-            <ol class="full-justify" start="1">
-                <li>
-                    <b>Thomas Decru - Breaking SIKE</b><br />
-                    KU Leuven<br />
-                    <i>September 13th, 17:00 (CEST)</i>.
-                    <details>
-                        <summary>abstract</summary>
-                        <p>Thomas paints a somewhat broader picture of the genus-2 isogeny setting
-                            to showcase how Wouter Castryck and Thomas found all the pieces of the
-                            puzzle to break SIKE.</p>
-                    </details>
-                    <p class="fulljustify">
-                        <a href="https://www.esat.kuleuven.be/cosic/people/thomas-decru/" target="_blank">Personal
-                            page</a> •
-                        <a href="https://the-isogeny-club.github.io/1-thomas-breaking-sike/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=mx9qNHm3mco" target="_blank">Recording</a> •
-                        <a href="https://askcryp.to/t/18576" target="_blank">Discussion</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Bruno Sterner - git commit -m “isogenies”</b><br />
-                    University of Surrey<br />
-                    <i>September 27th, 17:00 (CEST)</i>. <details>
-                        <summary>abstract</summary>
-                        <p>Supersingular isogeny graphs possess many properties that make it an interesting
-                            object to study mathematically as well as attempt to apply for cryptographic purposes.
-                            In this talk, Bruno will present one of these properties and showcase how it can be applied
-                            to construct a commitment scheme. This commitment scheme has strong security properties
-                            and doesn’t require random oracles.</p>
-                    </details>
-                    <p class="fulljustify">
-                        <a href="https://www.surrey.ac.uk/people/bruno-sterner" target="_blank">Personal page</a> •
-                        <a href="https://the-isogeny-club.github.io/2-bruno-git-commit/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=5a-l3OJ88VQ" target="_blank">Recording</a> •
-                        <a href="https://askcryp.to/t/18559" target="_blank">Discussion</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Maria Corte-Real Santos - [superlative]Solver: Attacking the General Isogeny Problem</b><br />
-                    University College London
-                    <br />
-                    <i>October 11th, 17:00 (CEST)</i>. <details>
-                        <summary>abstract</summary>
-                        <p> The general supersingular isogeny problem is the foundational hardness assumption
-                            underpinning
-                            isogeny-based cryptography. Its conjectured classical and quantum hardness has cemented
-                            isogenies
-                            as a promising tool for building post-quantum secure protocols. </p>
+            <ol class="full-justify" start="1"; id="season1"></ol>
+                <script>
+                    function loadListData() {
+                        fetch('season1.txt')
+                            .then(response => response.text())
+                            .then(data => {
+                                var list = document.getElementById('season1');
+                                var lines = data.split('\n');
+    
+                                lines.forEach(function (line) {
+                                    var listItem = document.createElement('li');
+                                    listItem.classList.add('list-item');
+                                    var folder = 'season-1/' + line;
 
-                        <p>In this talk, we will look at the general isogeny problem in low dimensions. More
-                            specifically,
-                            we consider the hardness of finding an isogeny between two given supersingular elliptic
-                            curves
-                            or two superspecial abelian surfaces defined over 𝔽<sub>p<sup>2</sup></sub>. Viewing these
-                            as path finding problems
-                            in a related isogeny graph, we introduce a general framework for solving these problems and
-                            present
-                            the state-of-the-art attacks against them. We will also discuss a strategy for improving
-                            their concrete
-                            complexity, based on joint work with Craig Costello, Sam Frengley and Jia Shi.</p>
-                    </details>
-                    <p class="fulljustify">
-                        <a href="https://www.mariascrs.com/" target="_blank">Personal page</a> •
-                        <a href="https://the-isogeny-club.github.io/3-maria-superlative-solver/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://youtu.be/rwEtpYlD9FU" target="_blank">Recording</a> •
-                        <a href="https://askcryp.to/t/18674" target="_blank">Discussion</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Antonin Leroux - A new algorithm for the effective Deuring correspondence: making SQISign
-                        faster</b><br />
-                    DGA,
-                    <br />
-                    <i>October 25th, 17:00 (CEST)</i>. <details>
-                        <summary>abstract</summary>
-                        <p> The quantum computer is a threat to cryptography as it can solve the problems upon which
-                            relies the security of a lot of protocols.
-                            Isogeny-based cryptography is a family of protocols relying on the hardness of finding an
-                            isogeny between two supersingular elliptic curves,
-                            a problem assumed hard even for a quantum computer. In this talk, we focus on the connection
-                            between isogeny-based cryptography
-                            and quaternion algebras called the Deuring correspondence. </p>
+                                    var talkDiv = document.createElement('div');
 
-                        <p>We will start with a generic overview of the applications of the Deuring correspondence to
-                            isogeny-based cryptography,
-                            before presenting a new algorithm to compute and realize the Deuring correspondence.
-                            In particular, this can be applied to speed-up the SQISign signature scheme.</p>
-                    </details>
-                    <p class="fulljustify">
-                        <a href="http://www.lix.polytechnique.fr/Labo/Antonin.LEROUX/" target="_blank">Personal page</a>
-                        •
-                        <a href="https://the-isogeny-club.github.io/4-antonin-deuring/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://youtu.be/2pAG3Pmsldk" target="_blank">Recording</a> •
-                        <a href="https://askcryp.to/t/18789" target="_blank">Discussion</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Tako Boris Fouotsa - Torsion point images in SIDH: from savior to killer</b><br />
-                    EPFL, <br />
-                    <i>November 8th, 17:00 (CET)</i>. <details>
-                        <summary>abstract</summary>
-                        <p> The first isogeny-based key exchange is the CRS (Couveignes - Rostovtsev - Stolbunov)
-                            scheme, which uses
-                            ordinary isogenies. The CRS scheme is relatively slow and is subject to a sub-exponential
-                            quantum attack.
-                            This motivated Jao and De Feo to suggest SIDH, which uses supersingular isogenies that, as
-                            opposed to ordinary
-                            isogenies, do not commute. To solve this commutativity issue, Jao and De Feo publish images
-                            of torsion points
-                            through the secret isogeny. SIDH was then faster and was not vulnerable to sub-exponential
-                            quantum attacks.</p>
+                                    var infoHeading = document.createElement('div');
+                                    var abstractHeading = document.createElement('details');
+                                    var urlHeading = document.createElement('p');
+                                    urlHeading.classList.add('fulljustify');
 
-                        <p>Today, the picture has changed considerably. The torsion point images have been used to
-                            design both
-                            adaptive and passive attacks on SIDH. Recently, we reached the "point de non retour":
-                            they were used to design a polynomial classical attack on SIDH. </p>
+                                    fetch(folder + '/info.txt')
+                                        .then(response => response.text())
+                                        .then(innerdata => {
+                                            var values = innerdata.split('\n');
+                                            var name = values[0];
+                                            var title = values[1];
+                                            var university = values[2];
+                                            var date = values[3];
 
-                        <p>In this talk, we will tell the story of the torsion point images in SIDH. We will go through
-                            their role
-                            in the design of SIDH, and in the design of both adaptive and passive attacks on SIDH.</p>
-                    </details>
-                </li>
-                <p class="fulljustify">
-                    <a href="https://borisfouotsa.github.io/" target="_blank">Personal page</a> •
-                    <a href="https://the-isogeny-club.github.io/5-boris-torsion-points/slides.pdf"
-                        target="_blank">Slides</a> •
-                    <a href="https://www.youtube.com/watch?v=ElFBMm8QEas" target="_blank">Recording</a> •
-                    <a href="https://askcryp.to/t/18919" target="_blank">Discussion</a>
-                </p>
-                <br>
-                <li>
-                    <b>Sabrina Kunzweiler - Genus 2 Isogenies</b><br />
-                    Ruhr University Bochum<br />
-                    <i>November 22nd, 17:00 (CET)</i>. <details>
-                        <summary>abstract</summary>
-                        <p>
-                        <p>Elliptic curves are abelian varieties of dimension one. It is only natural to consider
-                            generalizations of isogeny-based
-                            cryptographic protocols to higher dimensions. Apart from mathematical curiosity, the recent
-                            attacks on SIDH have shown
-                            that it is essential to study such generalizations in order to understand the security of
-                            elliptic curve based protocols.</p>
+                                            var nameHeading = document.createElement('b');
+                                            nameHeading.textContent = name + " - " + title;
+                                            infoHeading.appendChild(nameHeading);
+                                            infoHeading.appendChild(document.createElement('br'));
 
-                        <p>This talk gives an introduction to Jacobians of genus-2 curves (abelian varieties of
-                            dimension 2) and isogenies in this setting.
-                            The focus lies on the computation of Richelot isogenies.</p>
-                        </p>
-                    </details>
-                    <p class="fulljustify">
-                        <a href="https://www.crypto.ruhr-uni-bochum.de/staff/kunzweiler.html.en"
-                            target="_blank">Personal page</a> •
-                        <a href="https://the-isogeny-club.github.io/6-sabrina-genus2-isogenies/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=D5fdpZyRFhQ" target="_blank">Recording</a> •
-                        <a href="https://askcryp.to/t/isogeny-club-talk-6-genus-2-isogenies/19004"
-                            target="_blank">Discussion</a>
-                    </p>
-                </li>
-                <br>
-                <li>
-                    <b>Marc Houben - Horizontal racewalking using radical isogenies</b><br />
-                    Universiteit Leiden <br>
-                    <i>December 13th, 17:00 (CET)</i>.<br />
-                    <details>
-                        <summary>abstract</summary>
-                        <p>
-                            Radical isogeny formulae are equations that can be used to efficiently
-                            compute long chains of isogenies of small degree. Basically, they
-                            express the coefficients of the next curve in a chain of N-isogenies
-                            explicitly in terms of some expression involving the N-th root of a
-                            quantity depending on the Weierstrass coefficients of the input curve.
-                            One can prove that such an expression always exists, but finding it is
-                            a nontrivial task. We present a new method for finding radical isogeny
-                            formulae that extends the range for which we know them from N ≤ 13
-                            to N ≤ 37. </p>
+                                            var uniHeading = document.createElement('span');
+                                            uniHeading.textContent = university;
+                                            infoHeading.appendChild(uniHeading);
+                                            infoHeading.appendChild(document.createElement('br'));
 
-                        <p>We rewrite the existing and new formulae to optimize for
-                            fast evaluation. For even N, we present a conjecture that determines
-                            which N-th root must be taken in order to stay on the surface of the
-                            CSIDH isogeny graph, and we prove this conjecture for N ≤ 14. The
-                            combination of the above results in a speed up of a factor 3 for long
-                            chains of 2-isogenies over 512 bit prime fields, and we gain 12% over
-                            the previous implementation of CSIDH with radical isogenies.</p>
-                    </details>
-                    <p class="fulljustify">
-                        <a href="https://www.universiteitleiden.nl/en/staffmembers/marc-houben#tab-1"
-                            target="_blank">Personal page</a> •
-                        <a href="https://the-isogeny-club.github.io/7-marc-radical-isogenies/slides.pdf"
-                            target="_blank">Slides</a> •
-                        <a href="https://www.youtube.com/watch?v=cvS7m1c_PNI" target="_blank">Recording</a> •
-                        <a href="https://askcryp.to/t/19105" target="_blank">Discussion</a>
-                    </p>
-                </li>
-            </ol>
+                                            var timeHeading = document.createElement('i');
+                                            timeHeading.textContent = date;
+                                            infoHeading.appendChild(timeHeading);
+                                        });                                   
 
+                                    fetch(folder + "/abstract.txt")
+                                        .then(response => response.text())
+                                        .then(text => {
+                                            var summaryElement = document.createElement("summary");
+                                            summaryElement.textContent = "abstract";
+                                            var bodyElement = document.createElement("span");
+                                            bodyElement.innerHTML = text;
 
+                                            abstractHeading.appendChild(summaryElement);
+                                            abstractHeading.appendChild(bodyElement);
+
+                                            talkDiv.appendChild(abstractHeading);
+                                        })
+                                        .catch(error => {
+                                            console.error("Error fetching the text file:", error);
+                                        });
+
+                                    fetch(folder + '/info.txt')
+                                        .then(response => response.text())
+                                        .then(innerdata => {
+                                            var values = innerdata.split('\n');
+                                            var pageurl = values[4];
+                                            var slidebool = values[5];
+                                            var recordingurl = values[6];
+                                            var discussionurl = values[7];              
+
+                                            var page = document.createElement('a');
+                                            page.href = pageurl;
+                                            page.textContent = 'Personal page';
+                                            urlHeading.appendChild(page);
+
+                                            if (slidebool == 'yes'){
+                                                var bullet1 = document.createElement('span');
+                                                bullet1.textContent = " • ";
+                                                urlHeading.appendChild(bullet1);
+
+                                                var slides = document.createElement('a');
+                                                slides.href = "https://the-isogeny-club.github.io/" + line + "/slides.pdf";
+                                                slides.textContent = 'Slides';
+                                                urlHeading.appendChild(slides);
+                                            }
+
+                                            if (recordingurl != 'no'){
+                                                var bullet2 = document.createElement('span');
+                                                bullet2.textContent = " • ";
+                                                urlHeading.appendChild(bullet2);
+
+                                                var recording = document.createElement('a');
+                                                recording.href = recordingurl;
+                                                recording.textContent = 'Recording';
+                                                urlHeading.appendChild(recording);
+                                            }
+
+                                            if (discussionurl != 'no'){
+                                                var bullet3 = document.createElement('span');
+                                                bullet3.textContent = " • ";
+                                                urlHeading.appendChild(bullet3);
+
+                                                var discussion = document.createElement('a');
+                                                discussion.href = discussionurl;
+                                                discussion.textContent = 'Discussion';
+                                                urlHeading.appendChild(discussion);
+                                            }
+
+                                        });     
+    
+                                    talkDiv.appendChild(infoHeading);
+                                    talkDiv.appendChild(abstractHeading);
+                                    talkDiv.appendChild(urlHeading);
+
+                                    listItem.appendChild(talkDiv);
+                                    
+                                    list.appendChild(listItem);
+                                    list.appendChild(document.createElement('br'));
+                                });
+                            });
+                    }
+    
+                    loadListData();
+                </script>
+
+            
             <br>
             <hr>
             <br>
@@ -614,3 +492,4 @@
 
         </div>
     </main>
+</body>

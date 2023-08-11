@@ -1,0 +1,12 @@
+<p> The quantum computer is a threat to cryptography as it can solve the problems upon which
+    relies the security of a lot of protocols.
+    Isogeny-based cryptography is a family of protocols relying on the hardness of finding an
+    isogeny between two supersingular elliptic curves,
+    a problem assumed hard even for a quantum computer. In this talk, we focus on the connection
+    between isogeny-based cryptography
+    and quaternion algebras called the Deuring correspondence. </p>
+
+<p>We will start with a generic overview of the applications of the Deuring correspondence to
+    isogeny-based cryptography,
+    before presenting a new algorithm to compute and realize the Deuring correspondence.
+    In particular, this can be applied to speed-up the SQISign signature scheme.</p>

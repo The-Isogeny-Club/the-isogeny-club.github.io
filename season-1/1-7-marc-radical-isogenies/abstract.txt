@@ -1,0 +1,18 @@
+<p>
+    Radical isogeny formulae are equations that can be used to efficiently
+    compute long chains of isogenies of small degree. Basically, they
+    express the coefficients of the next curve in a chain of N-isogenies
+    explicitly in terms of some expression involving the N-th root of a
+    quantity depending on the Weierstrass coefficients of the input curve.
+    One can prove that such an expression always exists, but finding it is
+    a nontrivial task. We present a new method for finding radical isogeny
+    formulae that extends the range for which we know them from N ≤ 13
+    to N ≤ 37. </p>
+
+<p>We rewrite the existing and new formulae to optimize for
+    fast evaluation. For even N, we present a conjecture that determines
+    which N-th root must be taken in order to stay on the surface of the
+    CSIDH isogeny graph, and we prove this conjecture for N ≤ 14. The
+    combination of the above results in a speed up of a factor 3 for long
+    chains of 2-isogenies over 512 bit prime fields, and we gain 12% over
+    the previous implementation of CSIDH with radical isogenies.</p>

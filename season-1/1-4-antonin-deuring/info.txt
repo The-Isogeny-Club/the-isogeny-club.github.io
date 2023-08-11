@@ -1,0 +1,8 @@
+Antonin Leroux
+A new algorithm for the effective Deuring correspondence: making SQISign faster
+DGA
+October 25th, 17:00 (CEST)
+http://www.lix.polytechnique.fr/Labo/Antonin.LEROUX/
+yes
+https://youtu.be/2pAG3Pmsldk
+https://askcryp.to/t/18789

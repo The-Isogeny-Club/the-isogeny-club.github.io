@@ -1,0 +1,10 @@
+<p>Elliptic curves are abelian varieties of dimension one. It is only natural to consider
+    generalizations of isogeny-based
+    cryptographic protocols to higher dimensions. Apart from mathematical curiosity, the recent
+    attacks on SIDH have shown
+    that it is essential to study such generalizations in order to understand the security of
+    elliptic curve based protocols.</p>
+
+<p>This talk gives an introduction to Jacobians of genus-2 curves (abelian varieties of
+    dimension 2) and isogenies in this setting.
+    The focus lies on the computation of Richelot isogenies.</p>

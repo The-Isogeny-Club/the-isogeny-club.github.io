@@ -1,0 +1,22 @@
+<p>
+To study supersingular isogeny graphs, one may add to the elliptic curves the information of
+an orientation,
+or a particular embedding of an imaginary quadratic field into the endomorphism ring of the
+curve.
+Recent cryptographic protocols (Séta, OSIDH) have made use of orientations to define new
+hard problems on
+supersingular isogeny graphs. The mathematics of orientations have been studied for a long
+time, but the
+algorithmic implications are just now being understood.</p>
+
+<p>As part of a recent Women in Numbers 5 (WIN5) collaboration, my collaborators and I use
+orientations towards
+two different goals: 1. path-finding algorithms in the supersingular ℓ-isogeny graph and 2.
+understanding
+and counting cycles in the supersingular ℓ-isogeny graph.
+In this talk, we will first introduce the theory of orientations and discuss the relevant
+hard problems.
+We will go on to describe the path-finding algorithms and the theory behind cycle-counting
+which stem from adding
+orientations to supersingular elliptic curves.
+</p>

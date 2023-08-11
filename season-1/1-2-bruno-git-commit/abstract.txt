@@ -1,0 +1,5 @@
+<p>Supersingular isogeny graphs possess many properties that make it an interesting
+    object to study mathematically as well as attempt to apply for cryptographic purposes.
+    In this talk, Bruno will present one of these properties and showcase how it can be applied
+    to construct a commitment scheme. This commitment scheme has strong security properties
+    and doesn’t require random oracles.</p>

@@ -1,0 +1,11 @@
+<p>As discussed in the Isogeny Club talks by Antonin Leroux and Jonathan Komada 
+    Eriksen, SQISign requires a special prime characteristic in order to be 
+    efficient. In particular, we require a large factor of p^2-1 to be smooth.</p>
+
+<p>In this talk, we discuss the related problem of finding twin smooth integers 
+    via two different methods: the PTE-sieve that uses solutions to the 
+    Prouhet-Tarry-Escott problem, and an algorithm by Conrey-Holmstrom-McLaughlin. 
+    Although most of our results are not directly applicable to SQISign, we show 
+    how smaller twin smooths can be used to construct SQISign-friendly primes. 
+    Our approach is especially suitable for finding parameters for the NIST-III 
+    and NIST-V security levels.</p>

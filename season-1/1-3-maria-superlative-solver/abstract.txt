@@ -1,0 +1,17 @@
+<p> The general supersingular isogeny problem is the foundational hardness assumption
+    underpinning
+    isogeny-based cryptography. Its conjectured classical and quantum hardness has cemented
+    isogenies
+    as a promising tool for building post-quantum secure protocols. </p>
+
+<p>In this talk, we will look at the general isogeny problem in low dimensions. More
+    specifically,
+    we consider the hardness of finding an isogeny between two given supersingular elliptic
+    curves
+    or two superspecial abelian surfaces defined over 𝔽<sub>p<sup>2</sup></sub>. Viewing these
+    as path finding problems
+    in a related isogeny graph, we introduce a general framework for solving these problems and
+    present
+    the state-of-the-art attacks against them. We will also discuss a strategy for improving
+    their concrete
+    complexity, based on joint work with Craig Costello, Sam Frengley and Jia Shi.</p>
