@@ -1,0 +1,230 @@
+<!--
+    if you are reading this, you might be too much of a nerd or
+    perhaps precisely the amount of nerd the isogeny club needs
+                                                                -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>The Isogeny Club</title>
+        <style>
+            :root { 
+                    --home-color:#EAFDF8;   
+                    --sub-color:#C3EFFE;  
+                    --text-color: #182825; 
+                    line-height: 1.2em;
+                }
+
+            @media (min-width: 100px) {
+                :root { 
+                    --width: max-width; 
+                    --subwidth: max-width; 
+                    --superwidth: max-width; 
+                    --buttonwidth: 300px;
+                    --scale: 0.8;
+                    --correction: -200px;
+                }
+                img { width: 100%; }
+                }
+
+            @media (min-width: 500px) {
+                :root { 
+                    --width: 420px; 
+                    --subwidth: 400px; 
+                    --subsubwidth: 400px; 
+                    --superwidth: 440px; 
+                    --buttonwidth: 440px;
+                    --scale: 0.9;
+                    --correction: -100px;
+                }
+                img { width: 420px; }
+                }
+
+            header { margin-top: -20px}
+            body { font-family: 'Comfortaa'; display: flex; justify-content: center; font-size: 16px;
+                   margin-right: 0em; margin-left: 0em; padding: 0em; }
+            nav { margin-right: 0em; padding: 0em; }
+            .spaced-list > li { margin-bottom: 1ex; }
+            hr { border: 1px solid gray; width: 50%; margin: auto; }
+            a { text-decoration: none; }
+            a:hover { text-decoration: underline; }
+            body { background-color: var(--sub-color); color: var(--text-color) }
+            a { color: #9b4e36; }
+            a:visited { color: 	#E26D5C; }
+            .fulljustify { text-align:justify; margin-left: -20px;}
+            .fulljustify:after { content: "";  display: inline-block; width: 100%;  }
+            #tagline { height: 80px;  overflow: hidden; line-height: 80px; }
+
+            details {  text-align: justify; width: var(--width); }
+            details > summary {  padding-left: 20px; padding-top: 6px; cursor: pointer; width: var(--width);}
+            p { padding-top: -1em; padding-left: 0px; text-align: justify; width:var(--width)}
+            ol {  width: var(--subsubwidth); }
+            ul {  width: var(--subsubwidth); }
+            .scalewell {transform: scale(var(--scale)); margin-top: var(--correction)}
+
+            button {
+                    font-family: 'Comfortaa';
+                    background-color: var(--home-color);
+                    border: none;
+                    color: var(--text-color);
+                    text-align: center;
+                    padding: 20px 0px;
+                    margin-left: 0px;
+                    width: var(--buttonwidth);
+                    cursor: pointer;
+                    }
+
+        </style>
+        <link rel="icon" href="favicon.ico"/>
+
+
+<body>
+<main>
+
+<p style="text-align: center;"><a href="/"><button>Seminar Sessions</button></a></p>
+
+<header>
+     <!-- <h1 style="text-align: center;">The Isogeny Club</h1> -->
+     <img src="thanks_jessica.png" alt="Thank you, Jessica">
+</header>
+
+<div class="scalewell">
+
+<br>
+<h2 style="text-align: center;">Deuring Snack Pack</h2>
+<p style="text-align: center;">All talks given at The Isogeny Club on the Deuring correspondence.</p>
+<br>
+<hr>
+<br>
+
+<h3>Talks</h3>
+<ol class="full-justify" start="1"; id="deuring"></ol>
+<script>
+    function loadListData() {
+        fetch('deuring.txt')
+            .then(response => response.text())
+            .then(data => {
+                var list = document.getElementById('deuring');
+                var lines = data.split('\n');
+
+                lines.forEach(function (line) {
+                    var listItem = document.createElement('li');
+                    listItem.classList.add('list-item');
+                    var folder = line;
+
+                    var talkDiv = document.createElement('div');
+
+                    var infoHeading = document.createElement('div');
+                    var abstractHeading = document.createElement('details');
+                    var urlHeading = document.createElement('p');
+                    urlHeading.classList.add('halfjustify');
+
+                    fetch(folder + '/info.txt')
+                        .then(response => response.text())
+                        .then(innerdata => {
+                            var values = innerdata.split('\n');
+                            var name = values[0];
+                            var title = values[1];
+                            var university = values[2];
+                            var date = values[3];   
+
+                            var nameHeading = document.createElement('b');
+                            nameHeading.textContent = name + " - " + title;
+                            infoHeading.appendChild(nameHeading);
+                            infoHeading.appendChild(document.createElement('br'));
+
+                            var uniHeading = document.createElement('span');
+                            uniHeading.textContent = university;
+                            infoHeading.appendChild(uniHeading);
+                            infoHeading.appendChild(document.createElement('br'));
+
+                            // var timeHeading = document.createElement('i');
+                            // timeHeading.textContent = date;
+                            // infoHeading.appendChild(timeHeading);
+                        });                                   
+
+                    fetch(folder + "/abstract.txt")
+                        .then(response => response.text())
+                        .then(text => {
+                            var summaryElement = document.createElement("summary");
+                            summaryElement.textContent = "abstract";
+                            var bodyElement = document.createElement("span");
+                            bodyElement.innerHTML = text;
+
+                            abstractHeading.appendChild(summaryElement);
+                            abstractHeading.appendChild(bodyElement);
+                        })
+                        .catch(error => {
+                            console.error("Error fetching the text file:", error);
+                        });
+
+                    fetch(folder + '/info.txt')
+                        .then(response => response.text())
+                        .then(innerdata => {
+                            var values = innerdata.split('\n');
+                            var pageurl = values[4];
+                            var slidebool = values[5];
+                            var recordingurl = values[6];
+
+                            var page = document.createElement('a');
+                            page.target = "_blank";
+                            page.href = pageurl;
+                            page.textContent = 'Personal page';
+                            urlHeading.appendChild(page);
+
+                            if (slidebool == 'yes'){
+                                var bullet1 = document.createElement('span');
+                                bullet1.textContent = " • ";
+                                urlHeading.appendChild(bullet1);
+
+                                var slides = document.createElement('a');
+                                slides.target = "_blank";
+                                slides.href = "https://the-isogeny-club.github.io/" + folder + "/slides.pdf";
+                                slides.textContent = 'Slides';
+                                urlHeading.appendChild(slides);
+                            }
+
+                            if (recordingurl != 'no'){
+                                var bullet2 = document.createElement('span');
+                                bullet2.textContent = " • ";
+                                urlHeading.appendChild(bullet2);
+
+                                var recording = document.createElement('a');
+                                recording.target = "_blank";
+                                recording.href = recordingurl;
+                                recording.textContent = 'Recording';
+                                urlHeading.appendChild(recording);
+                            }
+                        });     
+
+                    talkDiv.appendChild(infoHeading);
+                    talkDiv.appendChild(abstractHeading);
+                    talkDiv.appendChild(urlHeading);
+
+                    listItem.appendChild(talkDiv);
+                    
+                    list.appendChild(listItem);
+                    list.appendChild(document.createElement('br'));
+                });
+            });
+    }
+
+    loadListData();
+</script>
+
+
+
+
+
+<p style="text-align: center;">
+    Overview of all Seminar Sessions at <b><a href="https://askcryp.to/tag/isogeny-club" target="_blank">askcryp.to</a></b>.
+</p>
+<p style="text-align: center;">Researchseminars.org <b><a href="https://researchseminars.org/seminar/IsogenyClub" target="_blank">here</a></b></p>
+<p style="text-align: center;">Twitter <b><a href="https://twitter.com/IsogenyClub" target="_blank">here</a></b></p>
+<p style="text-align: center;">YouTube <b><a href="https://www.youtube.com/channel/UC3gdW17-IM6Y4ar6tfu_iyw" target="_blank">here</a></b></p>
+
+</div>
+</main>
