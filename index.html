@@ -293,6 +293,7 @@
                                             var recordingurl = values[6];
 
                                             var page = document.createElement('a');
+                                            page.target = "_blank";
                                             page.href = pageurl;
                                             page.textContent = 'Personal page';
                                             urlHeading.appendChild(page);
@@ -303,6 +304,7 @@
                                                 urlHeading.appendChild(bullet1);
 
                                                 var slides = document.createElement('a');
+                                                slides.target = "_blank";
                                                 slides.href = "https://the-isogeny-club.github.io/" + line + "/slides.pdf";
                                                 slides.textContent = 'Slides';
                                                 urlHeading.appendChild(slides);
@@ -314,6 +316,7 @@
                                                 urlHeading.appendChild(bullet2);
 
                                                 var recording = document.createElement('a');
+                                                recording.target = "_blank";
                                                 recording.href = recordingurl;
                                                 recording.textContent = 'Recording';
                                                 urlHeading.appendChild(recording);
@@ -335,8 +338,6 @@
                     loadListData();
                 </script>
 
-            
-            <br>
             <hr>
             <br>
 
@@ -413,6 +414,7 @@
                                             var discussionurl = values[7];              
 
                                             var page = document.createElement('a');
+                                            page.target = "_blank";
                                             page.href = pageurl;
                                             page.textContent = 'Personal page';
                                             urlHeading.appendChild(page);
@@ -423,6 +425,7 @@
                                                 urlHeading.appendChild(bullet1);
 
                                                 var slides = document.createElement('a');
+                                                slides.target = "_blank";
                                                 slides.href = "https://the-isogeny-club.github.io/" + line + "/slides.pdf";
                                                 slides.textContent = 'Slides';
                                                 urlHeading.appendChild(slides);
@@ -434,6 +437,7 @@
                                                 urlHeading.appendChild(bullet2);
 
                                                 var recording = document.createElement('a');
+                                                recording.target = "_blank";
                                                 recording.href = recordingurl;
                                                 recording.textContent = 'Recording';
                                                 urlHeading.appendChild(recording);
@@ -445,6 +449,7 @@
                                                 urlHeading.appendChild(bullet3);
 
                                                 var discussion = document.createElement('a');
+                                                discussion.target = "_blank";
                                                 discussion.href = discussionurl;
                                                 discussion.textContent = 'Discussion';
                                                 urlHeading.appendChild(discussion);
