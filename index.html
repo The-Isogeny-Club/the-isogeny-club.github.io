@@ -65,7 +65,11 @@
                                             var date = values[3];   
 
                                             var nameHeading = document.createElement('b');
-                                            nameHeading.textContent = name + " - " + title;
+                                            if (title == 'TBD'){
+                                                nameHeading.textContent = name;
+                                            } else {
+                                                nameHeading.textContent = name + " - " + title; 
+                                            }
                                             infoHeading.appendChild(nameHeading);
                                             infoHeading.appendChild(document.createElement('br'));
 
