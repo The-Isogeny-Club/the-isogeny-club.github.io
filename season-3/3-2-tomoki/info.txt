@@ -3,6 +3,6 @@ The LIT problem and IS-CUBE
 University of Birmingham
 October 17th, 17:00 (CEST)
 http://tomoriya.work/index.html
-no
+yes
 https://youtu.be/k-fIf9znJKQ
 https://askcryp.to/t/resource-topic-2023-1506-is-cube-an-isogeny-based-compact-kem-using-a-boxed-sidh-diagram/20757/2
