@@ -53,7 +53,6 @@
                                     var infoHeading = document.createElement('div');
                                     var abstractHeading = document.createElement('details');
                                     var urlHeading = document.createElement('p');
-                                    urlHeading.classList.add('incompleteinfo');
 
                                     fetch(folder + '/info.txt')
                                         .then(response => response.text())
@@ -150,8 +149,13 @@
                                                 discussion.href = discussionurl;
                                                 discussion.textContent = 'Discussion';
                                                 urlHeading.appendChild(discussion);
-                                                urlHeading.classList.remove('incompleteinfo');
+                                                // urlHeading.classList.remove('incompleteinfo');
+                                                
+                                            } 
+                                            if (slidebool == 'yes' && recordingurl != 'no' && discussionurl != 'no'){
                                                 urlHeading.classList.add('fulljustify');
+                                            } else {
+                                                urlHeading.classList.add('incompleteinfo');
                                             }
 
                                             talkDiv.appendChild(urlHeading);
