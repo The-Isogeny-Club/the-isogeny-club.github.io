@@ -149,10 +149,10 @@
                                                 summaryElement.textContent = "abstract";
                                                 var bodyElement = document.createElement("span");
                                                 bodyElement.innerHTML = text;
-                                                if (text != "TBD"){
+                                                // if (text != "TBD"){
                                                     abstractHeading.appendChild(summaryElement);
                                                     abstractHeading.appendChild(bodyElement);
-                                                }
+                                                // }
                                             })
                                             .catch(error => {
                                                 console.error("Error fetching the text file:", error);
