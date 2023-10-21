@@ -81,28 +81,11 @@
                                             timeHeading.textContent = date;
                                             infoHeading.appendChild(timeHeading);
                                             talkDiv.appendChild(infoHeading);
-                                        });                                   
+                                        // });                                   
 
-                                    fetch(folder + "/abstract.txt")
-                                        .then(response => response.text())
-                                        .then(text => {
-                                            var summaryElement = document.createElement("summary");
-                                            summaryElement.textContent = "abstract";
-                                            var bodyElement = document.createElement("span");
-                                            bodyElement.innerHTML = text;
-                                            if (text != "TBD"){
-                                                abstractHeading.appendChild(summaryElement);
-                                                abstractHeading.appendChild(bodyElement);
-                                                talkDiv.appendChild(abstractHeading);
-                                            }
-                                        })
-                                        .catch(error => {
-                                            console.error("Error fetching the text file:", error);
-                                        });
-
-                                    fetch(folder + '/info.txt')
-                                        .then(response => response.text())
-                                        .then(innerdata => {
+                                    // fetch(folder + '/info.txt')
+                                    //     .then(response => response.text())
+                                    //     .then(innerdata => {
                                             var values = innerdata.split('\n');
                                             var pageurl = values[4];
                                             var slidebool = values[5];
@@ -158,8 +141,25 @@
                                                 urlHeading.classList.add('incompleteinfo');
                                             }
 
-                                            talkDiv.appendChild(urlHeading);
 
+                                            fetch(folder + "/abstract.txt")
+                                            .then(response => response.text())
+                                            .then(text => {
+                                                var summaryElement = document.createElement("summary");
+                                                summaryElement.textContent = "abstract";
+                                                var bodyElement = document.createElement("span");
+                                                bodyElement.innerHTML = text;
+                                                if (text != "TBD"){
+                                                    abstractHeading.appendChild(summaryElement);
+                                                    abstractHeading.appendChild(bodyElement);
+                                                }
+                                            })
+                                            .catch(error => {
+                                                console.error("Error fetching the text file:", error);
+                                            });
+
+                                            talkDiv.appendChild(abstractHeading);
+                                            talkDiv.appendChild(urlHeading);
                                         });     
     
 
