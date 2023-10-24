@@ -1,1 +1,11 @@
-TBD
+<p>One of the best arithmetics on elliptic curves involves Montgomery xz-coordinates,
+which are used in several cryptographic protocols such as ECDSA or ECDH.
+These coordinates also offer fast computations of 2- and 4-isogenies, used in several protocols
+like it was the case with SIDH, both for doubling and images of points,
+so improving isogeny formulas also improves scalar products on an elliptic curve.
+We realized there was a more general theory of Kummer lines under which xz-coordinates fall.</p>
+
+<p>In this talk, we will describe the general framework of Kummer lines,
+based on two families of examples: Montgomery xz-coordinates and theta models.
+We will then explain how to find 2-isogenies formulas, whether they were already known or new,
+and how we mixed them to improve elliptic curve arithmetic.</p>

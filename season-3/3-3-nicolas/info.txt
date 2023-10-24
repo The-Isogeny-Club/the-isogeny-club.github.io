@@ -1,5 +1,5 @@
 Nicolas Sarkis
-TBD
+Computing 2-isogenies between Kummer lines
 Institut de Mathématiques de Bordeaux
 October 31st, 17:00 (CET)
 https://www.math.u-bordeaux.fr/~nisarkis/
