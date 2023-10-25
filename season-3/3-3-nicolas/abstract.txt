@@ -7,5 +7,5 @@ We realized there was a more general theory of Kummer lines under which xz-coord
 
 <p>In this talk, we will describe the general framework of Kummer lines,
 based on two families of examples: Montgomery xz-coordinates and theta models.
-We will then explain how to find 2-isogenies formulas, whether they were already known or new,
+We will then explain how to find 2-isogeny formulas, whether they were already known or new,
 and how we mixed them to improve elliptic curve arithmetic.</p>
