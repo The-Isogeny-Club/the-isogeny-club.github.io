@@ -3,6 +3,6 @@ Faster (2,2)-isogenies for Faster Festive Encryption
 University of Bristol
 November 14th, 17:00 (CET)
 https://research-information.bris.ac.uk/en/persons/luciano-maino/
-no
-no
-no
+yes
+https://www.youtube.com/watch?v=VDBbpVylw1M
+https://askcryp.to/t/isogeny-club-season-3-talk-4-faster-2-2-isogenies-for-faster-festive-encryption/21020
