@@ -3,6 +3,6 @@ Hidden stabilizers, the isogeny to endomorphism ring problem and the cryptanalys
 Eötvös Loránd University/University of Birmingham
 November 28th, 17:00 (CET)
 https://sites.google.com/view/peterkutas89/main-page?authuser=0
-no
+yes
 https://www.youtube.com/watch?v=k0nAK6O2J0A
 https://askcryp.to/t/isogeny-club-season-3-talk-5-hidden-stabilizers-the-isogeny-to-endomorphism-ring-problem-and-the-cryptanalysis-of-psidh/21094
