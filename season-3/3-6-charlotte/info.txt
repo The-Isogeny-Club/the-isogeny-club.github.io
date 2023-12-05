@@ -1,5 +1,5 @@
 Charlotte Weitkämper
-TBD
+Finding isogenies of fixed degree between supersingular elliptic curves
 University of Birmingham
 December 12th, 17:00 (CET)
 https://www.birmingham.ac.uk/staff/profiles/computer-science/research-student/weitkamper-charlotte.aspx
