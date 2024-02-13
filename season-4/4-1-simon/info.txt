@@ -1,5 +1,5 @@
 Simon-Philipp Merz
-SCALLOP
+SCALLOP: a somewhat scalable effective group action from isogenies
 ETH Zürich
 February 27th, 17:00 (CET)
 https://simon-philipp.com/
