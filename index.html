@@ -92,11 +92,13 @@
                                             var recordingurl = values[6];
                                             var discussionurl = values[7];
 
-                                            var page = document.createElement('a');
-                                            page.target = "_blank";
-                                            page.href = pageurl;
-                                            page.textContent = 'Personal page';
-                                            urlHeading.appendChild(page);
+                                            if (pageurl != 'no'){
+                                                var page = document.createElement('a');
+                                                page.target = "_blank";
+                                                page.href = pageurl;
+                                                page.textContent = 'Personal page';
+                                                urlHeading.appendChild(page);
+                                            }
 
                                             if (slidebool == 'yes'){
                                                 var bullet1 = document.createElement('span');
