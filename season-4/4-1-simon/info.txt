@@ -3,6 +3,6 @@ SCALLOP: a somewhat scalable effective group action from isogenies
 ETH Zürich
 February 27th, 17:00 (CET)
 https://simon-philipp.com/
-no
-no
-no
+yes
+https://youtu.be/BlCn7iPuk78?si=IPd9JdfbVVRI1b7T
+https://askcryp.to/t/isogeny-club-season-4-talk-1-scallop/21610
