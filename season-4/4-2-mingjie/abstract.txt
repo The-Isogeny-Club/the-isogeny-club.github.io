@@ -1,1 +1,1 @@
-TBD
+<p>In this talk, we present SCALLOP-HD, a novel group action that builds upon the recent SCALLOP group action introduced by De Feo, Fouotsa, Kutas, Leroux, Merz, Panny and Wesolowski in 2023. While our group action uses the same class group as SCALLOP, we introduce a different orientation representation using the isogeny embedding technique from Kani's lemma. Our new approach considerably simplifies the SCALLOP framework, surpasses SCALLOP in scalability and potentially in efficiency. This is joint work with Antonin Leroux and Lorenz Panny.</p>
