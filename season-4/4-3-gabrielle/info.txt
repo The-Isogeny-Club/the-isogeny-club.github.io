@@ -1,5 +1,5 @@
 Gabrielle Scullard
-TBD
+Connecting Kani's Lemma and path-finding in the Bruhat-Tits tree to compute endomorphism rings of supersingular elliptic curves
 Pennsylvania State University
 March 26th, 17:00 (CET)
 https://sites.psu.edu/gns49/
