@@ -1,1 +1,19 @@
-TBD
+<p>The use of Kummer surfaces in isogeny-based cryptography
+dates back to a suggestion by the Chudnovsky brothers in the 1980s.
+Later, Gaudry showed that Kummer surfaces can be used for high-speed
+curve cryptography, and subsequent works improved the usage of Kummer
+surfaces in cryptography. With the recent interest in higher-dimensional
+isogenies, Kummer surfaces have also appeared as tools for efficient
+(2,2)-isogenies between Jacobians of genus-2 curves, and similarly, Costello
+suggested the usage of Kummer surfaces for SIDH already in 2018.</p>
+
+<p>In this talk, we go over these developments to give an introduction to
+Kummer surfaces and their use in cryptography, and their connection to
+theta structures. We then use Scholten's construction to SQIsign verification,
+which allows us to perform this verification on Kummer surfaces over'
+𝔽<sub>p</sub>, 
+instead of elliptic curves over 𝔽<sub>p<sup>2</sup></sub>. This requires us
+to develop a list of non-trivial computational tools on Kummer surfaces,
+which have general applications for higher-dimensional isogeny-based cryptography.
+In particular, we describe how pairings can be used to decompose Jacobians,
+which allows for efficient sampling of torsion points.</p>
