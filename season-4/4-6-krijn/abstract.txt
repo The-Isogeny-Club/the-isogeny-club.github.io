@@ -9,7 +9,7 @@ suggested the usage of Kummer surfaces for SIDH already in 2018.</p>
 
 <p>In this talk, we go over these developments to give an introduction to
 Kummer surfaces and their use in cryptography, and their connection to
-theta structures. We then use Scholten's construction to SQIsign verification,
+theta structures. We then apply Scholten's construction to SQIsign verification,
 which allows us to perform this verification on Kummer surfaces over'
 𝔽<sub>p</sub>, 
 instead of elliptic curves over 𝔽<sub>p<sup>2</sup></sub>. This requires us
