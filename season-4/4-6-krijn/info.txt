@@ -1,8 +1,8 @@
-Mystery Guest
+Krijn Reijnders
 Using Kummer surfaces in SQIsign verification
-Mystery University
+Radboud University
 May 7th, 17:00 (CEST)
-https://www.youtube.com/watch?v=vRoPJjcbhm4
-no
+https://krijn-math.github.io/krijn/
+yes
 no
 no
