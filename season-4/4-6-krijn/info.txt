@@ -2,7 +2,7 @@ Krijn Reijnders
 Using Kummer surfaces in SQIsign verification
 Radboud University
 May 7th, 17:00 (CEST)
-https://krijn-math.github.io/krijn/
+https://krijn.post-quantum-crypto.com
 yes
 no
 no
