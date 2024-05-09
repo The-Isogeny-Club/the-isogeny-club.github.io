@@ -4,5 +4,5 @@ Radboud University
 May 7th, 17:00 (CEST)
 https://krijn.post-quantum-crypto.com
 yes
-no
-no
+https://www.youtube.com/watch?v=XNbqgxL6Loc
+https://askcryp.to/t/isogeny-club-season-4-talk-6-using-kummer-surfaces-in-sqisign-verification/21978
