@@ -1,0 +1,8 @@
+Andrea Basso
+POKE: A Framework for Efficient PKEs, Split KEMs, and OPRFs from Higher-dimensional Isogenies
+IBM Research Europe
+May 26th, 13:30 (CEST)
+https://andreabasso.com/
+yes
+https://youtu.be/nrZkaUXhRxM?si=92edrCvJBl_8q6Dm
+https://askcryp.to/tag/isogeny-club

@@ -33,20 +33,6 @@
             <p style="text-align: center;">A seminar session for young isogenists.</p>
             <br>
 
-            <h2>Brainstorm Days</h2>
-            <p>An extra talk will be given at the <a href="eurocrypt">Brainstorm Days</a>, affiliated to 
-                Eurocrypt 2024 in Zürich.</p>
-            <br>
-
-            <ul class="full-justify" start="1"; id="extra">
-                <li>
-                    <b>Andrea Basso - POKE: A Framework for Efficient PKEs,
-                    Split KEMs, and OPRFs from Higher-dimensional Isogenies</b><br>
-                    IBM Research Europe<br>
-                    <i>May 26th, 13:30 (CEST)</i>
-                </li>
-            </ul>
-            <br>
             <p>To add sessions automatically to your Google Calendar, click
                 <a href="https://calendar.google.com/calendar/u/1?cid=aXNvZ2VueWNsdWJAZ21haWwuY29t">here.</a>
            </p>
@@ -57,6 +43,153 @@
             <br>
 
             <h2>Previous talks</h2>
+            <h3>"Christmas" Special</h3>
+            <ol class="full-justify" start="1"; id="brainstormdays"></ol>
+                <script>
+                    function loadListData() {
+                        fetch('brainstormdays.txt')
+                            .then(response => response.text())
+                            .then(data => {
+                                var list = document.getElementById('brainstormdays');
+                                var lines = data.split('\n');
+    
+                                lines.forEach(function (line) {
+                                    var listItem = document.createElement('li');
+                                    listItem.classList.add('list-item');
+                                    var folder = 'brainstorm-days/' + line;
+
+                                    var talkDiv = document.createElement('div');
+
+                                    var infoHeading = document.createElement('div');
+                                    var abstractHeading = document.createElement('details');
+                                    var urlHeading = document.createElement('p');
+
+                                    fetch(folder + '/info.txt')
+                                        .then(response => response.text())
+                                        .then(innerdata => {
+                                            var values = innerdata.split('\n');
+                                            var name = values[0];
+                                            var title = values[1];
+                                            var university = values[2];
+                                            var date = values[3];   
+
+                                            var nameHeading = document.createElement('b');
+                                            if (title == 'TBD'){
+                                                nameHeading.textContent = name;
+                                            } else {
+                                                nameHeading.textContent = name + " - " + title; 
+                                            }
+                                            infoHeading.appendChild(nameHeading);
+                                            infoHeading.appendChild(document.createElement('br'));
+
+                                            var uniHeading = document.createElement('span');
+                                            uniHeading.textContent = university;
+                                            infoHeading.appendChild(uniHeading);
+                                            infoHeading.appendChild(document.createElement('br'));
+
+                                            var timeHeading = document.createElement('i');
+                                            timeHeading.textContent = date;
+                                            infoHeading.appendChild(timeHeading);
+                                            talkDiv.appendChild(infoHeading);
+                                        // });                                   
+
+                                    // fetch(folder + '/info.txt')
+                                    //     .then(response => response.text())
+                                    //     .then(innerdata => {
+                                            var values = innerdata.split('\n');
+                                            var pageurl = values[4];
+                                            var slidebool = values[5];
+                                            var recordingurl = values[6];
+                                            var discussionurl = values[7];
+
+                                            if (pageurl != 'no'){
+                                                var page = document.createElement('a');
+                                                page.target = "_blank";
+                                                page.href = pageurl;
+                                                page.textContent = 'Personal page';
+                                                urlHeading.appendChild(page);
+                                            }
+
+                                            if (slidebool == 'yes'){
+                                                var bullet1 = document.createElement('span');
+                                                bullet1.textContent = " • ";
+                                                urlHeading.appendChild(bullet1);
+
+                                                var slides = document.createElement('a');
+                                                slides.target = "_blank";
+                                                slides.href = "https://the-isogeny-club.github.io/" + folder + "/slides.pdf";
+                                                slides.textContent = 'Slides';
+                                                urlHeading.appendChild(slides);
+                                            }
+
+                                            if (recordingurl != 'no'){
+                                                var bullet2 = document.createElement('span');
+                                                bullet2.textContent = " • ";
+                                                urlHeading.appendChild(bullet2);
+
+                                                var recording = document.createElement('a');
+                                                recording.target = "_blank";
+                                                recording.href = recordingurl;
+                                                recording.textContent = 'Recording';
+                                                urlHeading.appendChild(recording);
+                                            }
+
+                                            if (discussionurl != 'no'){
+                                                var bullet3 = document.createElement('span');
+                                                bullet3.textContent = " • ";
+                                                urlHeading.appendChild(bullet3);
+
+                                                var discussion = document.createElement('a');
+                                                discussion.target = "_blank";
+                                                discussion.href = discussionurl;
+                                                discussion.textContent = 'Discussion';
+                                                urlHeading.appendChild(discussion);
+                                                // urlHeading.classList.remove('incompleteinfo');
+                                                
+                                            } 
+                                            if (slidebool == 'yes' && recordingurl != 'no' && discussionurl != 'no'){
+                                                urlHeading.classList.add('fulljustify');
+                                            } else {
+                                                urlHeading.classList.add('incompleteinfo');
+                                            }
+
+
+                                            fetch(folder + "/abstract.txt")
+                                            .then(response => response.text())
+                                            .then(text => {
+                                                var summaryElement = document.createElement("summary");
+                                                summaryElement.textContent = "abstract";
+                                                var bodyElement = document.createElement("span");
+                                                bodyElement.innerHTML = text;
+                                                // if (text != "TBD"){
+                                                    abstractHeading.appendChild(summaryElement);
+                                                    abstractHeading.appendChild(bodyElement);
+                                                // }
+                                            })
+                                            .catch(error => {
+                                                console.error("Error fetching the text file:", error);
+                                            });
+
+                                            talkDiv.appendChild(abstractHeading);
+                                            talkDiv.appendChild(urlHeading);
+                                        });     
+    
+
+                                    listItem.appendChild(talkDiv);
+                                    
+                                    list.appendChild(listItem);
+                                    list.appendChild(document.createElement('br'));
+                                });
+                            });
+                    }
+                    
+                    loadListData();
+                </script>
+
+            <hr>
+            <br>
+            <br>
+
             <h3>Season Four</h3>
             <ol class="full-justify" start="1"; id="season4"></ol>
                 <script>
