@@ -1,6 +1,6 @@
 Giacomo Borin
 EREBOR: a Full-Anonymous Ring Signature based on SQISign
-Universität Zürich (UZH) and IBM Zurich
+Universität Zürich (UZH) and IBM Zürich
 October 8th, 17:00 (CEST)
 https://giacomoborin.github.io/
 yes
