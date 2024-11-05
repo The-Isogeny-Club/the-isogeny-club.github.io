@@ -1,1 +1,3 @@
-<p>TBD</p>
+<p>The determinant of the Hessian matrix of a cubic F defines a new cubic called the Hessian of F. In this talk, we will see how the Hessian of cubics can be regarded as a Lattès map. This fact is the reason underlying the remarkable regularity of the functional graphs obtained by iterating the Hessian (over an arbitrary field) . We will then focus on the case of finite fields, in which the structure of Hessian graphs is completely dictated by the rational points of (the twists of) a suitable elliptic curve. This leads to efficient algorithms to compute the iterated Hessian of a given j-invariant, and to detect j-invariants lying in the same connected component of the Hessian graph. We will conclude with some remarks on the distribution of supersingular j-invariants in the Hessian graph.</p>
+
+<p>Based on a joint work with F. Pintore and D. Taufer.</p>
