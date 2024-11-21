@@ -1,5 +1,5 @@
 Riccardo Invernizzi
-TBD
+PRISM: Simple And Compact Identification and Signatures From Large Prime Degree Isogenies
 KU Leuven
 December 3rd, 17:00 (CET)
 https://r98inver.github.io/

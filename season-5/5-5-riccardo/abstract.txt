@@ -1,1 +1,3 @@
-<p>TBD</p>
+<p>The problem of computing an isogeny of large prime degree from a supersingular elliptic curve of unknown endomorphism ring is assumed to be hard both for classical as well as quantum computers.
+In this talk, we present an identification protocol and the derived signature whose security reduces to this problem. The challenge consists of a random large prime q, and the response is a degree q isogeny from the public key.
+The flexibility of this scheme comes at no expenses in terms of efficiency and compactness: signature and public key sizes are comparable to other isogeny based signature schemes, signing is roughly 1.8 times faster than SQIsign2D-West, and verification 1.4 times slower.</p>
