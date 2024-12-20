@@ -3,6 +3,6 @@ PRISM: Simple And Compact Identification and Signatures From Large Prime Degree 
 KU Leuven
 December 3rd, 17:00 (CET)
 https://r98inver.github.io/
-no
+yes
 https://www.youtube.com/watch?v=YUMc5kOIACg
 no
