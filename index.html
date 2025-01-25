@@ -43,13 +43,13 @@
             <br>
            
             <h3>Season Six</h3>
-            <ol class="full-justify" start="1"; id="season5"></ol>
+            <ol class="full-justify" start="1"; id="season6"></ol>
                 <script>
                     function loadListData() {
                         fetch('season6.txt')
                             .then(response => response.text())
                             .then(data => {
-                                var list = document.getElementById('season5');
+                                var list = document.getElementById('season6');
                                 var lines = data.split('\n');
     
                                 lines.forEach(function (line) {
