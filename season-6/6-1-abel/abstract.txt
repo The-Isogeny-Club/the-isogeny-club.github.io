@@ -1,1 +1,2 @@
-<p>TBD</p>
+<p>In this work will generalize the KLPT algorithm to principally polarized superspecial abelian varieties in dimension 2.</p>
+<p>After a comprehensive and down-to-earth description of the problem and the tools involved, we will present the algorithm and finish with a short discussion on potential applications and the remaining open problems.</p>
