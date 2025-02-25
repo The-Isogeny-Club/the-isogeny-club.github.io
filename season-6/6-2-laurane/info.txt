@@ -1,5 +1,5 @@
 Laurane Marco
-TBD
+Computing modular polynomials modulo a generic prime
 EPFL
 March 11th, 17:00 (CET)
 https://lauranemarco.github.io/
