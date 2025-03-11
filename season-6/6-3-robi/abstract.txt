@@ -1,1 +1,4 @@
-<p>TBD</p>
+<p>This talk presents an overview of multi-party approaches to isogeny-based cryptographic schemes in the effective group action setting.</p>
+<p>We look at this, both from the angle of distributed group action computations, as well as from the angle of using techniques from secure multi-party computation to realize group-action-based protocols. The former has allowed the construction of schemes such as threshold encryption and signatures, while the latter can be used to realize verifiable (oblivious) pseudorandom functions that are orders of magnitudes more compact than previous Naor-Reingold type designs.</p>
+<p>Finally, we show that combining both these approaches allows us to construct the first threshold verifiable (oblivious) pseudorandom functions in the isogeny setting, and one of the first post-quantum ones.</p>
+<p>A particular emphasis of this talk lies on new zero-knowledge proof systems that allow achieving robust security in the presence of malicious adversaries.</p>
