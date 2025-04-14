@@ -1,5 +1,5 @@
 Shai Levin
-TBD
+Isogeny Unpredictability Assumptions, and Applying Generic Proof Systems to Isogenies
 University of Auckland
 April 22nd, 20:30 (CEST)
 https://science.capetown/
