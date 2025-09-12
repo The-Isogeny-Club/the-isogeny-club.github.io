@@ -2,7 +2,7 @@ Abel Laval
 KLPT² : Algebraic pathfinding in dimension two
 Université Libre De Bruxelles
 February 25th, 17:00 (CET)
-https://www.ulb.be/fr/abel-laval
+https://abellaval.github.io/
 yes
 https://youtu.be/ueCfeBvx4b8?si=O7EM0T2KiRWbKCRS
 no
