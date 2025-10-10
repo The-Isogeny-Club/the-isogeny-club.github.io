@@ -1,1 +1,21 @@
-<p>TBD</p>
+<p>SQIsign is the leading digital signature from isogenies.
+While there have been many improvements to the scheme in the last
+couple of years, until recently no variant of SQIsign had a complete
+proof of security. This talk is all about proving the security of SQIsign.
+Throughout, we will focus on the variant of SQIsign submitted to the
+round 2 of the NIST competition. However, the hope is that the techniques discussed can be used to
+analyze future variants as well.</p>
+<p>For the first half of the talk, we focus on classical security.
+We will discuss a new framework, called "Fiat--Shamir with hints",
+that captures SQIsign and related protocols.
+Using this framework, we analyze the EUF-CMA security of SQIsign in ROM.</p>
+<p> In the second half of the talk, we turn to quantum security.
+Currently, we do not know how to prove that SQIsign is QROM secure,
+due to issues with quantum rewinding.
+To give evidence for the quantum security of SQIsign, we introduce a
+new idealized model called the Algebraic Isogeny Model (AIM).
+It is the analogue of the Algebraic Group Model for general isogeny protocols.
+In the AIM, the QROM security of SQIsign can be proved easily, without
+the need for any quantum rewinding techniques.
+We view this as a motivating example of how the AIM could become a
+powerful tool for the isogeny community.</p>
