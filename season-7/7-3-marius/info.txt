@@ -3,6 +3,6 @@ On the security of SQIsign and the Algebraic Isogeny Model
 Aarhus University
 October 21st, 17:00 (CEST)
 https://pure.au.dk/portal/en/persons/maardal%40cs.au.dk
-no
+yes
 https://youtu.be/3ZyxKqunrqA?si=Mq_tx6gHFS7tV1lG
 no
