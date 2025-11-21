@@ -1,0 +1,12 @@
+<p>Who said that SQISign is too complicated to build advanced constructions?</p>
+
+<p>In this talk, we attempt to convince you otherwise by showing a full-anonymous 
+linear-size ring signature: Erebor, which stands for 'Eichler order 
+RE-randomizing-Based OR proof'. Full-Anonymous Ring Signatures allow a member of 
+a group to sign a message on behalf of the group without revealing which member 
+actually produced the signature, even from an adversary with access to the entire 
+group and any additional information. </p>
+
+<p>The scheme builds on the KLPT-based implementations of SQISign, maintaining 
+its compact keys and signatures, but modified it to achieve the full-anonymity 
+property.</p>

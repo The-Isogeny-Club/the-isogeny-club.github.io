@@ -1,0 +1,3 @@
+<p>Modular polynomials are bivariate integer polynomials that characterise isogenies between elliptic curves.
+They play a crucial role in point counting algorithm for elliptic curves, and also find applications in some isogeny-based cryptography protocols.</p> 
+<p>In this talk, we will give an overview of previous techniques used in the computation of modular polynomials and then describe a new method for computing them that relies on the technique introduced by Nakagawa and Onuki in QFESTA that is now widely exploited in several areas of isogeny-based cryptography. We will compare this new method with current techniques for computing modular polynomials, highlight its advantages and limitations, and discuss open problems. </p>

@@ -1,0 +1,15 @@
+<p>In this talk, we motivate and present an effective group action based on isogenies of supersingular
+curves, called SCALLOP. Similar to CSIDH and OSIDH, an imaginary order’s class group acts on a set
+of oriented supersingular elliptic curves. Its main benefit compared to CSIDH is that the structure
+of the acting class group can be easily computed - it can even be partially controlled when choosing
+parameters. This data is required to uniquely represent and efficiently act by arbitrary group
+elements which is useful for example when constructing efficient signatures.</p>
+
+<p>The class group structure for the smallest parameter set of CSIDH could be computed with a world
+record class group computation - leading to CSI-FiSh. However, for larger security levels computing
+the structure in CSIDH remains elusive with currently known methods. On the other hand, SCALLOP can
+be instantiated for security levels comparable to CSIDH-512 and CSIDH-1024 using only modest
+computational resources. We discuss several of our design choices with respect to security and
+computational efficiency. Asymptotically, some scaling issues remain and while evaluating the SCALLOP
+group action is feasible, its performance requires further improvement before it can be used for
+practical applications.</p>

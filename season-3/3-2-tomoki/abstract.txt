@@ -1,1 +1,9 @@
-TBD
+In this talk, Tomoki proposes a novel computational problem
+named the Long Isogeny with Torsion (LIT) problem, which is the problem
+of computing a hidden isogeny from two given supersingular elliptic curves
+and information on torsion points of relatively small order. By considering
+this problem, we can construct a secure SIDH diagram in which all isogenies
+are of degree linearly related to the security parameter λ. Based on the
+hardness of the LIT problem, Tomoki proposes a new isogeny-based key
+encapsulation mechanism named IS-CUBE, which uses about an 8λ-bit prime
+and a random starting curve.

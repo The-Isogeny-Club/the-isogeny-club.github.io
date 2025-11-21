@@ -1,0 +1,8 @@
+Sina Schaeffler
+Constant-time lattice reduction for SQIsign
+IBM Zürich and ETH Zürich
+December 17th, 17:00 (CET)
+https://isogeny.club/
+yes
+no
+no

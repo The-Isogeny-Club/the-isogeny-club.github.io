@@ -1,1 +1,22 @@
-TBD
+<p>With David Kohel, we defined an OSIDH protocol for oriented supersingular
+isogeny Diffie-Hellman, by imposing the data of an orientation by an
+imaginary quadratic ring on the category of supersingular elliptic curves.
+One of the advantages of working in this general framework is that the group
+action by the class group can be carried out effectively solely on the sequence
+of moduli points on a modular curve, thereby avoiding expensive generic isogeny
+computations or the requirement of rational torsion points.</p>
+
+<p>The proposed attacks of Onuki and Dartois-De Feo and their analyses motivate
+the idea of enlarging the class group without touching the key space using clouds.
+In this talk, we propose two approaches to augment the OSIDH protocol in a way
+that no effective data is transmitted for a third party to compute cycle relations.
+In both cases, it comes down to an extension of the initial chain by the two
+parties seperately.</p>
+
+<p>We also consider the role of a formal orientation, equipping the formal group
+of each curve with compatible (formal) endomorphism rings. It is well-known
+that the endomorphism ring is the p-adic completion of the endomorphism ring
+and every such formal group is isomorphic. We will review some arithmetic on
+formal groups of elliptic curves and construct formal orientations, with a view
+to create formal orientations of supersingular isogeny graphs and explore the
+implications for effective computation and navigation.</p>

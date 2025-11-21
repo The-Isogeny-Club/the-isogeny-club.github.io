@@ -1,1 +1,11 @@
-TBD
+<p>
+Let E be a supersingular elliptic curve with known endomorphism and let φ be an isogeny 
+whose domain is E. When the isogeny has a smooth degree, then one can easily compute the endomorphism
+ring of the codomain. How about when the isogeny degree is not smooth? In this case we cannot write down our 
+isogeny efficiently, but we have a representation of the isogeny which allows us to evaluate the isogeny efficiently 
+at any point. The SIDH attacks do not seem to help here as the isogeny degree is not smooth and its kernel is defined
+over a very large extension.</p>
+
+<p>The key idea to tackle this problem is to consider a non-abelian group action on the set
+of fixed degree isogenies. In this talk, we describe this method in detail and convince cryptographers that non-abelian 
+hidden subgroup problems can be very useful in cryptography.</p>

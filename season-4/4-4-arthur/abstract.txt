@@ -1,0 +1,5 @@
+<p>Computing the endomorphism ring of elliptic curves is a fundamental problem in isogeny-based cryptography as the security of most schemes in this field relies on its hardness.
+How much easier does this problem get when a public endomorphism is provided?
+In this talk, we answer this question by giving a rigorous complexity analysis of the endomorphism ring problem given one endomorphism.
+To this end, we review how higher-dimensional isogenies can be used to divide endomorphisms by integers in polynomial time.
+Along the way, we also present improvements on previous results regarding oriented variants of the endomorphism ring problem.</p>
