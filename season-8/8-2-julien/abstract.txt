@@ -1,1 +1,11 @@
-<p>TBD</p>
+<p>The Deuring correspondence between supersingular elliptic curves and quaternionic ideals is a major tool to design
+efficient algorithms for working with one dimensional abelian varieties of known endomorphism ring. The module correspondence
+can be seen as a new framework extending this correspondence in higher dimension. It is ruled by the same idea that,
+given some extra information about morphisms from an abelian variety, we can reduce hard problems to linear algebra
+over a non commutative ring.</p>
+
+<p>In this talk we present some results of a joint work with Aurel Page and Damien Robert. After recalling the basis of
+the module correspondence, we will describe our solution to the Principal Ideal Problem in matrix spaces over quaternionic
+orders, along with an higher dimensional generalization of the well known Clapoti(s) algorithm. We will also highlight
+some consequences of those new tools, such as the computation of unpolarized isomorphisms between a maximal abelian variety,
+given its module representation, and power of a maximal elliptic curves.</p>

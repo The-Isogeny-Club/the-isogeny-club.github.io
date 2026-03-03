@@ -1,5 +1,5 @@
 Julien Soumier
-TBD
+On the conversion of module representations for higher dimensional supersingular isogenies
 Centre Inria de l’Université de Lorraine
 March 17th, 17:00 (CET)
 https://members.loria.fr/JSoumier/
