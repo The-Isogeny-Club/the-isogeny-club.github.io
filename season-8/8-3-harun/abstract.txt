@@ -1,1 +1,3 @@
-<p>TBD</p>
+<p>The l-isogeny graph is a cornerstone of isogeny-based cryptography. Analyzing its expansion properties is essential for evaluating the underlying hardness of fundamental cryptographic problems. While the one-dimensional superspecial isogeny graph is a well-known Ramanujan graph with optimal expansion, the landscape changes in higher dimensions, which are now significant ingredients in this research area.</p>
+
+<p>In this talk, we examine the expansion of higher-dimensional isogeny graphs with and with level structure. Although these graphs are not Ramanujan, we demonstrate that they still exhibit strong expansion properties. Then we discuss applications, including the removal of heuristics from the Costello-Smith algorithm for solving the isogeny problem in dimension 2. This work is in progress and is joint with M. Corte-Real Santos, O. Taïbi, and B. Wesolowski.</p>
