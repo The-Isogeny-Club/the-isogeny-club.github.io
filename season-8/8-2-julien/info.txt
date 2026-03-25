@@ -3,6 +3,6 @@ On the conversion of module representations for higher dimensional supersingular
 Centre Inria de l’Université de Lorraine
 March 17th, 17:00 (CET)
 https://members.loria.fr/JSoumier/
-no
-no
+yes
+https://www.youtube.com/watch?v=_OTLu_fiHzQ
 no
