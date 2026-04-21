@@ -1,1 +1,11 @@
-<p>TBD</p>
+<p>Recent works ((qt-)PEGASIS, KLaPoTi) have devised concretely efficient unrestricted algorithms to evaluate the isogney class-group action, stemming from the asympotitcally polynomial-time algorithm laid out by Clapoti. Such unrestricted algorithms for the isogeny class-group action are very powerful, allowing for the construction of post-quantum analogues of well-known (pre-quantum) discrete-log primitives.</p>
+
+<p>However, for simpler constructions (most notably non-interactive key-exchange), restricted algorithms for evaluating the isogeny class-group action (e.g. the CSIDH family) suffice.</p>
+
+<p>We revisit the clapoti construction in dimension two for the Frobenius orientation and discover that there are many classes represented by pairs of ideals whose norm sum to a small enough 2-power, such that the corresponding 2-power torsion is rational; and that sampling from this set amounts to solving a relatively straightforward norm-equation.</p>
+
+<p>In other words: whilst it is difficult to evaluate the action of an arbitrary ideal without resorting to higher dimensions ((qt-)PEGASIS) or larger field characteristics (KLaPoTi), there are in fact many classes which can be computed concretely-efficiently in dimension-2 over the base field for the Frobenius orientation.</p>
+
+<p>From this observation, we construct CORAL; a concretely-efficient restricted algorithm to compute the isogeny-class group action for the Frobenius orientation. Notably, and unlike dCTIDH/OSIDH-LD/CISDH-LDO, CORAL computes the same action as (qt-)PEGASIS, and so can be used to accelerate more advanced primitives that require unrestriction actions but permit restricted computation in some subroutines.</p>
+
+<p>Our (unoptimised) C implementation is roughly 12x faster than qt-PEGASIS (unoptimised), around 2x faster than dCTIDH (optimised) for discriminants of size 2000 bits; around 2.5x slower than recent OSIDH-LD/CSIDH-LDO (optimised) implementations at discriminants of 4000 bits.</p>

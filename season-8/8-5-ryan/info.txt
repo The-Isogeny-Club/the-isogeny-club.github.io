@@ -1,5 +1,5 @@
 Ryan Rueger
-TBD
+CORAL: Faster Isogeny Group Action for Post-Quantum NIKE
 IBM Research Zurich and Technical University of Munich
 April 28th, 17:00 (CEST)
 https://rueg.re/
