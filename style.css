@@ -12,7 +12,7 @@
         --superwidth: max-width;
         --buttonwidth: 300px;
         --scale: 0.8;
-        --correction: -300px;
+        --correction: -20px;
     }
 
     img {
@@ -28,7 +28,7 @@
         --superwidth: 440px;
         --buttonwidth: 440px;
         --scale: 0.9;
-        --correction: -280px;
+        --correction: -20px;
     }
 
     img {
@@ -157,6 +157,7 @@ ul {
 
 .scalewell {
     transform: scale(var(--scale));
+    transform-origin: top center;
     margin-top: var(--correction);
     vertical-align:top; /* <---- this */
 }
@@ -171,4 +172,29 @@ button {
     margin-left: 0px;
     width: var(--buttonwidth);
     cursor: pointer;
+}
+
+.season-toggle {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.season-toggle::before {
+    content: "▶";
+    display: inline-block;
+    font-size: 0.6em;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+.season-toggle.expanded::before {
+    transform: rotate(90deg);
+}
+
+ol.collapsed {
+    display: none;
 }
