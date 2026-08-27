@@ -230,6 +230,7 @@
             if (options.toggle) {
                 heading.classList.add('season-toggle');
                 heading.dataset.target = options.listId;
+                if (options.startExpanded) heading.classList.add('expanded');
                 heading.addEventListener('click', function () {
                     var target = document.getElementById(options.listId);
                     if (!target) return;
@@ -241,7 +242,7 @@
 
             var list = document.createElement('ol');
             list.classList.add('full-justify');
-            if (options.toggle) list.classList.add('collapsed');
+            if (options.toggle && !options.startExpanded) list.classList.add('collapsed');
             list.setAttribute('start', '1');
             list.id = options.listId;
             container.appendChild(list);
@@ -265,6 +266,7 @@
                 headingLevel: 'h3',
                 headingText: 'Season ' + seasonNumberWord(s),
                 toggle: true,
+                startExpanded: s === CURRENT_SEASON - 1,
                 listId: 'season' + s,
                 txtFile: 'season' + s + '.txt',
                 folderPrefix: 'season-' + s + '/'
