@@ -91,11 +91,16 @@
             'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen',
             'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty'];
 
+        // Year each season took place in (based on its talk dates) - update when a new season starts.
+        var SEASON_YEARS = {
+            1: 2022, 2: 2023, 3: 2023, 4: 2024, 5: 2024, 6: 2025, 7: 2025, 8: 2026, 9: 2026
+        };
+
         function seasonNumberWord(n) {
             return SEASON_NUMBER_WORDS[n] || String(n);
         }
 
-        function renderTalks(txtFile, folderPrefix, listId) {
+        function renderTalks(txtFile, folderPrefix, listId, year) {
             fetch(txtFile)
                 .then(response => response.text())
                 .then(data => {
@@ -122,6 +127,7 @@
                                 var title = values[1];
                                 var university = values[2];
                                 var date = values[3];
+                                if (year) date = date.replace(',', ', ' + year + ',');
 
                                 var nameHeading = document.createElement('b');
                                 if (title == 'TBD') {
@@ -247,7 +253,7 @@
             list.id = options.listId;
             container.appendChild(list);
 
-            renderTalks(options.txtFile, options.folderPrefix, options.listId);
+            renderTalks(options.txtFile, options.folderPrefix, options.listId, options.year);
         }
 
         var currentSeasonContainer = document.getElementById('current-season-container');
@@ -257,7 +263,8 @@
             toggle: false,
             listId: 'season' + CURRENT_SEASON,
             txtFile: 'season' + CURRENT_SEASON + '.txt',
-            folderPrefix: 'season-' + CURRENT_SEASON + '/'
+            folderPrefix: 'season-' + CURRENT_SEASON + '/',
+            year: SEASON_YEARS[CURRENT_SEASON]
         });
 
         var previousSeasonsContainer = document.getElementById('previous-seasons-container');
@@ -269,7 +276,8 @@
                 startExpanded: s === CURRENT_SEASON - 1,
                 listId: 'season' + s,
                 txtFile: 'season' + s + '.txt',
-                folderPrefix: 'season-' + s + '/'
+                folderPrefix: 'season-' + s + '/',
+                year: SEASON_YEARS[s]
             });
 
             // The "Christmas" brainstorm special ran between Season Five and Season Four.
@@ -280,7 +288,8 @@
                     toggle: true,
                     listId: 'brainstormdays',
                     txtFile: 'brainstormdays.txt',
-                    folderPrefix: 'brainstorm-days/'
+                    folderPrefix: 'brainstorm-days/',
+                    year: SEASON_YEARS[4]
                 });
             }
         }
