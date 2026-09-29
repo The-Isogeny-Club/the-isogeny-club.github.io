@@ -1,1 +1,3 @@
-<p>TBD.</p>
+<p>Generating random supersingular elliptic curves with unknown endomorphism rings is a longstanding open problem in isogeny-based cryptography. Many protocols, notably the CGL hash function, rely on such curves for security, yet classical sampling methods require a trusted setup.</p>
+
+<p>In this talk, we address this problem in the quantum setting. We give quantum polynomial-time algorithms for sampling secure supersingular curves, assuming the quantum average-case hardness of EndRing and a plausible number-theoretic conjecture. We also give an unconditional algorithm for sampling secure oriented elliptic curves assuming the hardness of Vectorization problem. Our approach builds on sevel spectral properties of isogeny graphs to ensure polynomial running-time and provability of security.</p>
