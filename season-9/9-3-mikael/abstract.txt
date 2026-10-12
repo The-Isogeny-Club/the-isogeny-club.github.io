@@ -1,1 +1,2 @@
-<p>TBD.</p>
+<p>Under suitable hypotheses, the behaviour of isogenies between superspecial abelian varieties with real multiplication is reminiscent of that of isogenies between supersingular elliptic curves. For instance, such isogenies are in bijection with ideals in a certain quaternion algebra, and produce Ramanujan families of isogeny graphs.
+In this talk, we recall the theory of superspecial abelian varieties with real multiplication. We then present RM-KLPT, an analog of the famous KLPT algorithm in this setting, with an output of similar size. We also consider the possible cryptographic applications of real multiplication, as well as perspectives for future work.</p>
