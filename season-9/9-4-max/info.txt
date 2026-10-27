@@ -1,5 +1,5 @@
 Max Duparc
-TBD
+MIKE: fast and compact post-quantum NIKE
 EPFL
 November 10th, 17:00 (CET)
 https://maxduparc.github.io/

@@ -1,1 +1,6 @@
-<p>TBD.</p>
+<p>Why use a group action when a monoidal action is sufficient?
+This talk answers that exact question through MIKE, a post-quantum non-interactive key exchange (NIKE) that brings to life a bold idea by Damien Robert: building a Diffie-Hellman-style key exchange based on the module action on oriented abelian varieties.</p>
+
+<p>The resulting scheme boasts great cryptographic properties. It is ultra-compact (requiring just 80B for public keys) while remaining remarkably fast (< 5 ms on a laptop), especially for an isogeny-based protocol. Furthermore, it features a constant-time implementation and an active security reduction to the Endomorphism Ring problem within an algebraic model.</p>
+
+<p>In this talk, we will explore how these characteristics came to be and show how a highly theoretical equivalence between modules and abelian varieties was transformed into a practical, efficient cryptographic primitive. Along the way, we will also answer the question on everyone’s lips: Why are there only a meager 100 pages of appendices in this paper?</p>
