@@ -3,6 +3,6 @@ The supersingular isogeny problem in cube-root time
 ENS de Lyon and CNRS
 September 29th, 17:00 (CEST)
 https://www.bweso.com/
-no
+yes
 https://youtu.be/vRlU31gWas4
 no
