@@ -1,1 +1,2 @@
-<p>TBD.</p>
+<p>In this talk, we will look at collision-based attacks both for elliptic curve and isogeny problems. We will consider the following problems: (1) the ECDLOG problem, (2) the pathfinding problem on supersingular $\mathbb{F}_p^2$-curves, (3) the pathfinding problem on supersingular $\mathbb{F}_p-curves. We will start out with an introduction on Van Oorschot and Wiener-type attacks in these settings. We then will show how we can use these attacks in the multi-user setting version of the three original problems, thus in a setting where we have a large number of public keys and we want to extract as many as possible in a faster way than breaking them one at a time. This is joint work with Sebastiano Boscardi and Monika Trimoska.</p>
+
