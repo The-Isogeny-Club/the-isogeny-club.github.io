@@ -1,5 +1,5 @@
 Jolijn Cottaar
-TBD
+Graphs and cycles in curve-based collision walks
 Technical University of Eindhoven
 December 15th, 17:00 (CET)
 https://jolijnc.github.io/website/
